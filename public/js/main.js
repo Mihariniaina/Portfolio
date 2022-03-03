@@ -1,5 +1,4 @@
 (function ($) {
-    console.log("teeeeeeeeeeeeeeeeee1");
     "use strict";
     
     // loader
@@ -60,7 +59,6 @@
     
     // Typed Initiate
     if ($('.hero .hero-text h2').length === 1) {
-        console.log("aaaaaaaaaaaa");
         var typed_strings = $('.hero .hero-text .typed-text').text();
         var typed = new Typed('.hero .hero-text h2', {
             strings: typed_strings.split(', '),

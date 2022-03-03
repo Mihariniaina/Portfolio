@@ -25,9 +25,9 @@ const App = () => {
 
   return (
     <div>
-      <Navigation />
+      {/* <Navigation />
       <Header/>
-      <About/>
+      <About/> */}
     </div>
   );
 };
