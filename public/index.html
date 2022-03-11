@@ -41,6 +41,13 @@
                 <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
                 <a href="#contact" class="nav-item nav-link">Contact</a>
                 <a href="#blog" class="nav-item nav-link">Blog</a>
+                <a href="" class="nav-item nav-link">
+                    <select id="globalTranslate" class="select">
+                        <option value="en">English</option>
+                        <option value="fr">French</option>
+                        <option value="mg">Malagasy</option>
+                    </select>
+                </a>
             </div>
         </div>
     </div>
@@ -55,7 +62,11 @@
             <div class="col-sm-12 col-md-6">
                 <div class="hero-content">
                     <div class="hero-text">
-                        <p>I'm</p>
+                        <p eo-translator="inform"
+                            eo-translator-html="true"
+                            eo-translator-params='{ "pet-name": "Riley", "owner-name": "Claire" }'
+                            eo-translator-fallback="This is a fallback translation for when the targeted translation is not found.">
+                        </p>
                         <h1>Rilah Mario MIHARINIAINA</h1>
                         <h2></h2>
                         <div class="typed-text">Web Designer, Web Developer, Apps Designer, Apps Developer</div>
@@ -563,7 +574,7 @@
                             <p><i class="far fa-comments"></i>10</p>
                         </div>
                         <p>
-                            I am a Malagasy musician, I studied guitar and I spend almost all my free time playing, writing and composing. I am open to all kind of music, I like to listen to alternative rock and indie music because it calms my mind a lot. I really appreciate the creation of Malagasy artists like Imiangaly and John Oabmar.
+                            I am a Malagasy musician, I studied guitar and I spend almost all my free time playing, writing and composing. I am open to all kind of music, I like to listen to alternative rock and indie music because it calms my soul a lot. I really appreciate the creation of Malagasy artists like Imiangaly and John Oabmar.
                         </p>
                         <a class="btn" href="">Read More <i class="fa fa-angle-right"></i></a>
                     </div>
@@ -624,4 +635,10 @@
 
 <!-- Template Javascript -->
 <script src="js/main.js"></script>
+
+<!-- Translate JS. -->
+<script src="./js/translator.min.js"></script>
+
+<!-- The main script. -->
+<script src="./js/script.js"></script>
 </body>
