@@ -33,19 +33,19 @@
 
         <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
             <div class="navbar-nav ml-auto">
-                <a href="#home" class="nav-item nav-link active">Home</a>
-                <a href="#about" class="nav-item nav-link">About</a>
-                <a href="#experience" class="nav-item nav-link">Experience</a>
-                <a href="#service" class="nav-item nav-link">Service</a>
-                <a href="#review" class="nav-item nav-link">Quote</a>
-                <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
-                <a href="#contact" class="nav-item nav-link">Contact</a>
-                <a href="#blog" class="nav-item nav-link">Blog</a>
+                <a href="#home" class="nav-item nav-link active" eo-translator="header.home"></a>
+                <a href="#about" class="nav-item nav-link" eo-translator="header.about"></a>
+                <a href="#experience" class="nav-item nav-link" eo-translator="header.experience"></a>
+                <a href="#service" class="nav-item nav-link" eo-translator="header.service"></a>
+                <a href="#review" class="nav-item nav-link" eo-translator="header.quote"></a>
+                <a href="#portfolio" class="nav-item nav-link" eo-translator="header.portfolio"></a>
+                <a href="#contact" class="nav-item nav-link" eo-translator="header.contact"></a>
+                <a href="#blog" class="nav-item nav-link" eo-translator="header.blog"></a>
                 <a href="" class="nav-item nav-link">
                     <select id="globalTranslate" class="select">
-                        <option value="en">English</option>
-                        <option value="fr">French</option>
-                        <option value="mg">Malagasy</option>
+                        <option value="en" eo-translator="about.english">English</option>
+                        <option value="fr" eo-translator="about.french">French</option>
+                        <option value="mg" eo-translator="about.malagasy">Malagasy</option>
                     </select>
                 </a>
             </div>
@@ -62,18 +62,15 @@
             <div class="col-sm-12 col-md-6">
                 <div class="hero-content">
                     <div class="hero-text">
-                        <p eo-translator="inform"
-                            eo-translator-html="true"
-                            eo-translator-params='{ "pet-name": "Riley", "owner-name": "Claire" }'
-                            eo-translator-fallback="This is a fallback translation for when the targeted translation is not found.">
+                        <p eo-translator="home.me">
                         </p>
                         <h1>Rilah Mario MIHARINIAINA</h1>
                         <h2></h2>
                         <div class="typed-text">Web Designer, Web Developer, Apps Designer, Apps Developer</div>
                     </div>
                     <div class="hero-btn">
-                        <a class="btn" href="">Hire Me</a>
-                        <a class="btn" href="">Contact Me</a>
+                        <a class="btn" href="" eo-translator="home.hire"></a>
+                        <a class="btn" href="" eo-translator="home.contact_me"></a>
                     </div>
                 </div>
             </div>
@@ -100,55 +97,56 @@
             <div class="col-lg-6">
                 <div class="about-content">
                     <div class="section-header text-left">
-                        <p>Learn About Me</p>
-                        <h2>Fullstack developer</h2>
+                        <p eo-translator="about.subtitle"></p>
+                        <h2 eo-translator="about.title">Fullstack developer</h2>
                     </div>
                     <div class="about-text">
-                        <p>
+                        <p eo-translator="about.desc">
                             I am MIHARINIAINA Rilah Mario, passionate about computer science since the age of 14. After graduating with a Master II in "Mobiquity, Big data and Systems Integration" at the University of Nice Sofia Antipolis.
                         </p>
                         <br>
                         <div class="row">
                             <div class="col-md-6">
-                                    <p class="title">Informations</p>
+                                    <p class="title" eo-translator="about.information">Informations</p>
                                     <ul class="contact-address">
-                                        <li><i class="fa fa-calendar"></i> Born on 3rd March 1998 </li>
-                                        <li><i class="fa fa-flag"></i> Malagasy </li>
-                                        <li><i class="fa fa-user"></i> Single </li>
-                                        <li><i class="fa fa-car"></i> Driving licenses A, B, C, D </li>
+                                        <li><i class="fa fa-calendar"></i> <p eo-translator="about.born"> </p></li>
+                                        <li><i class="fa fa-flag"></i> <p eo-translator="about.malagasy"> </p> </li>
+                                        <li><i class="fa fa-user"></i> <p eo-translator="about.single"> </p> </li>
+                                        <li><i class="fa fa-car"></i> <p eo-translator="about.driving"> </p> </li>
                                         <li><i class="fa fa-map-marker fa-lg"></i>&nbsp; Soavimasoandro,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Antananrivo 101, Madagascar</li>
                                         <li><i class="fa fa-phone"></i>&nbsp; +261 34 28 381 22</li>
                                         <li><i class="fa fa-envelope"></i> r.mmihary@gmail.com</li>
                                         <li><i class="fab fa-skype"></i> live:r.mmihary </li>
+                                        <li><i class="fab fa-linkedin-in"></i> <a href="https://www.linkedin.com/in/rilah-mario/">rilah-mario</a></li>
                                     </ul>
                             </div>
                             <div class="col-md-6">
                                 <div class="skills">
-                                    <p class="title">Languages</p>
+                                    <p class="title" eo-translator="about.languages">Languages</p>
                                     <div class="skill-name">
-                                        <p>French</p><p></p>
+                                        <p eo-translator="about.french">French</p><p></p>
                                     </div>
                                     <div class="progress">
                                         <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div><br>
                                     <div class="skill-name">
-                                        <p>English</p><p></p>
+                                        <p eo-translator="about.english">English</p><p></p>
                                     </div>
                                     <div class="progress">
                                         <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div><br>
                                     <div class="skill-name">
-                                        <p>Malagasy :  Mother tongue</p> <p></p>
-                                    </div><br>
-                                    <p class="title">Strengths</p>
-                                    <p> Ponctual <br> Ease of learning process <br> Ambitious </p>
-                                    <p class="title">Areas of interest</p>
-                                    <p> Musical arrangement <br> Sweaming <br> Film making </p>
+                                        <p eo-translator="about.mother_tongue">Malagasy :  Mother tongue</p> <p></p>
+                                    </div><br><br>
+                                    <p class="title" eo-translator="about.strengths">Strengths</p>
+                                    <p eo-translator="about.ponctual"> Ponctual</p><p eo-translator="about.ease"> Ease of learning process </p><p eo-translator="about.creative">Creative </p><br>
+                                    <p class="title" eo-translator="about.hobbies">Areas of interest</p>
+                                    <p eo-translator="about.music"> Musical arrangement </p><p eo-translator="about.sweaming"> Sweaming </p><p eo-translator="about.filmaking"> Film making </p>
                                 </div> 
                             </div>
                         </div>
-                    </div><br>
-                    <a class="btn" href="#contact">Contact me</a>
+                    </div>
+                    <a class="btn" href="#contact" eo-translator="about.cv">Download my CV</a>
                 </div>
             </div>
         </div>
@@ -160,49 +158,49 @@
 <div class="experience" id="experience">
     <div class="container">
         <header class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-            <p>My Resume</p>
-            <h2>Studying & formation</h2>
+            <p eo-translator="study_work.subtitle">My Resume</p>
+            <h2 eo-translator="study_work.title1">Studying & formation</h2>
         </header>
         <div class="timeline">
             <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
                 <div class="timeline-text">
                     <div class="timeline-date">2016</div>
-                    <h2>Bachelor's degree - Series C</h2>
-                    <h4>LEG Imerintsiatosika</h4>
+                    <h2 eo-translator="study_work.diplaume1">Bachelor's degree - Series C</h2>
+                    <h4 eo-translator="study_work.diplaume1_desc">LEG Imerintsiatosika</h4>
                 </div>
             </div>
             <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
                 <div class="timeline-text">
                     <div class="timeline-date">2016 - 2019</div>
-                    <h2>Licence degree - web development and design</h2>
-                    <h4>ITUniversity of Andoharanofotsy, Antananarivo</h4>
+                    <h2 eo-translator="study_work.diplaume2">Licence degree - web development and design</h2>
+                    <h4 eo-translator="study_work.diplaume2_desc">ITUniversity of Andoharanofotsy, Antananarivo</h4>
                 </div>
             </div>
             <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
                 <div class="timeline-text">
                     <div class="timeline-date">2018 - 2019</div>
-                    <h2>Cinema – Image – 3D</h2>
-                    <h4>CFP E-MEDIA, Antananarivo</h4>
+                    <h2 eo-translator="study_work.diplaume3">Cinema – Image – 3D</h2>
+                    <h4 eo-translator="study_work.diplaume3_desc">CFP E-MEDIA, Antananarivo</h4>
                 </div>
             </div>
             <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
                 <div class="timeline-text">
                     <div class="timeline-date">2019 - 2021</div>
-                    <h2>Master degree - Mobiquity, Big data and Systems Integration</h2>
-                    <h4>Nice University, Sophia Antipolis</h4>
+                    <h2 eo-translator="study_work.diplaume4">Master degree - Mobiquity, Big data and Systems Integration</h2>
+                    <h4 eo-translator="study_work.diplaume4_desc">Nice University, Sophia Antipolis</h4>
                 </div>
             </div>
         </div>
         <header class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-            <h2>Working Experience</h2>
+            <h2 eo-translator="study_work.title2">Working Experience</h2>
         </header>
         <div class="timeline">
             <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
                 <div class="timeline-text">
                     <div class="timeline-date">June 2019 - August 2019</div>
-                    <h2>Web engeneer - Telma media planning</h2>
-                    <h4>PULSE, Antananarivo, Madagascar</br> Symphony, Codeigniter, Mysql</h4>
-                    <p>
+                    <h2 eo-translator="study_work.work1">Web engeneer - Telma media planning</h2>
+                    <h4 class="need-newline" eo-translator="study_work.work1_sub">PULSE, Antananarivo, Madagascar</br> Symphony, Codeigniter, Mysql</h4>
+                    <p class="need-newline" eo-translator="study_work.work1_desc">
                         - Development and maintenance of internal software </br>- Realization and development of functional requirements </br>- Proposal of digital solutions
                     </p>
                 </div>
@@ -210,19 +208,21 @@
             <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
                 <div class="timeline-text">
                     <div class="timeline-date">December 2019 - December 2020</div>
-                    <h2>MEAN Stack developer</h2>
-                    <h4>ADRWARE, Antananarivo, Madagascar </br> Angular, JAVA, NodeJS, MongoDB</h4>
-                    <p>
-                        - Development and maintenance of internal software </br>- Realization and development of functional requirements </br>- Proposal of digital solutions
+                    <h2 class="need-newline" eo-translator="study_work.work2">MEAN Stack developer</h2>
+                    <h4 class="need-newline" eo-translator="study_work.work2_sub">ADRWARE, Antananarivo2, Madagascar </br> Angular, JAVA, NodeJS, MongoDB</h4>
+                    <p class="need-newline" eo-translator="study_work.work2_desc">
+                        - Development and maintenance of internal software </br>
+                        - Realization and development of functional requirements </br>
+                        - Proposal of digital solutions
                     </p>
                 </div>
             </div>
             <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
                 <div class="timeline-text">
                     <div class="timeline-date">January 2021 - October 2021</div>
-                    <h2>Scrum master / Product Owner</h2>
-                    <h4>SEMWEE, France, Télétravail</br>Agile, MEAN Stack</h4>
-                    <p>
+                    <h2 class="need-newline" eo-translator="study_work.work3">Scrum master / Product Owner</h2>
+                    <h4 class="need-newline" eo-translator="study_work.work3_sub">SEMWEE, France, Télétravail</br>Agile, MEAN Stack</h4>
+                    <p class="need-newline" eo-translator="study_work.work3_desc">
                         - Lead the project from conception to delivery</br>
                         - Make the design of the database</br>
                         - Validate the mock-ups made by the UX/UI</br>
@@ -237,10 +237,12 @@
             <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
                 <div class="timeline-text">
                     <div class="timeline-date">Since November 2021</div>
-                    <h2>Fulstack developer</h2>
-                    <h4>SCOPLAN, France, Télétravail</br> IONIC, JAVA, Objective-C, Symfony, Mysql</h4>
-                    <p>
-                        - Development and maintenance of android, ios and web application </br>- Realization and development of functional requirements </br>- Proposal of digital solutions
+                    <h2 class="need-newline" eo-translator="study_work.work4">Fulstack developer</h2>
+                    <h4 class="need-newline" eo-translator="study_work.work4_sub">SCOPLAN, France, Télétravail</br> IONIC, JAVA, Objective-C, Symfony, Mysql</h4>
+                    <p class="need-newline" eo-translator="study_work.work4_desc">
+                        - Development and maintenance of android, ios and web application </br>
+                        - Realization and development of functional requirements </br>
+                        - Proposal of digital solutions
                     </p>
                 </div>
             </div>
@@ -253,8 +255,8 @@
 <div class="service" id="service">
     <div class="container">
         <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-            <p>What I do</p>
-            <h2>Awesome Quality Services</h2>
+            <p eo-translator="service.subtitle">What I do</p>
+            <h2 eo-translator="service.title">Awesome Quality Services</h2>
         </div>
         <div class="row">
             <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.0s">
@@ -263,8 +265,8 @@
                         <i class="fa fa-ruler"></i>
                     </div>
                     <div class="service-text">
-                        <h3>Design</h3>
-                        <p>
+                        <h3 eo-translator="service.content1">Design</h3>
+                        <p eo-translator="service.desc1">
                             Creative and strategic, I can realize or create models, poster, logo or graphic charter by using tools like figma, photoshop, indesign, illustrator, etc...
                         </p>
                     </div>
@@ -276,8 +278,8 @@
                         <i class="fa fa-laptop-code"></i>
                     </div>
                     <div class="service-text">
-                        <h3>Web Development</h3>
-                        <p>
+                        <h3 eo-translator="service.content2">Web Development</h3>
+                        <p eo-translator="service.desc2">
                             After University, I mastered various web technology like php, javascript, symfony, codeigniter, angular, nodesJS, java, etc... which allows me to become fullstack.
                         </p>
                     </div>
@@ -289,8 +291,8 @@
                         <i class="fab fa-apple"></i>
                     </div>
                     <div class="service-text">
-                        <h3>Apps Development</h3>
-                        <p>
+                        <h3 eo-translator="service.content3">Apps Development</h3>
+                        <p eo-translator="service.desc3">
                             We learned mobile technologies like java, ionic, swift and objectiveC like android studio environment and XCode. What I currently apply in a company.
                         </p>
                     </div>
@@ -302,8 +304,8 @@
                         <i class="fa fa-database"></i>
                     </div>
                     <div class="service-text">
-                        <h3>Data engeneer</h3>
-                        <p>
+                        <h3 eo-translator="service.content4">Data engeneer</h3>
+                        <p eo-translator="service.desc4">
                             During my training, we studied databases like mysql, postgres, oracle, sqlite, mongoDB... That we have applied in many project as well as in my internship.
                         </p>
                     </div>
@@ -327,11 +329,11 @@
                     <img src="img/rilah.jpg" alt="Image">
                 </div>
                 <div class="testimonial-text">
-                    <p>
+                    <p eo-translator="quotes.q1">
                         "Ease of learning process, ready to discover a new technology and a increase my experience."
                     </p>
                     <h3>Rilah Mario</h3>
-                    <h4>Fullstack developer</h4>
+                    <h4 eo-translator="quotes.pers1">Fullstack developer</h4>
                 </div>
             </div>
             <div class="testimonial-item">
@@ -339,11 +341,11 @@
                     <img src="img/Duke_Ellington_1964.jpg" alt="Image">
                 </div>
                 <div class="testimonial-text">
-                    <p>
+                    <p eo-translator="quotes.q2">
                         "A problem is a chance for you to do your best."
                     </p>
                     <h3>Duke Ellington</h3>
-                    <h4>Jazz Musician</h4>
+                    <h4 eo-translator="quotes.pers2">Jazz Musician</h4>
                 </div>
             </div>
             <div class="testimonial-item">
@@ -351,11 +353,11 @@
                     <img src="img/Earl_Nightingale.jpg" alt="Image">
                 </div>
                 <div class="testimonial-text">
-                    <p>
+                    <p eo-translator="quotes.q3">
                         "We become what we think about."
                     </p>
                     <h3>Earl Nightingale</h3>
-                    <h4>Author</h4>
+                    <h4 eo-translator="quotes.pers3">Author</h4>
                 </div>
             </div>
             <div class="testimonial-item">
@@ -366,8 +368,8 @@
                     <p>
                         "The present is the anvil where the future is made."
                     </p>
-                    <h3>Victor Hugo</h3>
-                    <h4>Poet</h4>
+                    <h3 eo-translator="quotes.q4">Victor Hugo</h3>
+                    <h4 eo-translator="quotes.pers4">Poet</h4>
                 </div>
             </div>
         </div>
@@ -379,18 +381,18 @@
 <div class="portfolio" id="portfolio">
     <div class="container">
         <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-            <p>My Portfolio</p>
-            <h2>My Excellent Portfolio</h2>
+            <p eo-translator="portfolio.subtitle">My Portfolio</p>
+            <h2 eo-translator="portfolio.title">My Excellent Portfolio</h2>
         </div>
         <div class="row">
             <div class="col-12">
                 <ul id="portfolio-filter">
-                    <li data-filter="*" class="filter-active">All</li>
-                    <li data-filter=".filter-1">Web Apps</li>
-                    <li data-filter=".filter-2">Mobile Apps</li>
-                    <li data-filter=".filter-3">Design</li>
-                    <li data-filter=".filter-4">Music composition</li>
-                    <li data-filter=".filter-5">Film making</li>
+                    <li data-filter="*" class="filter-active" eo-translator="portfolio.all">All</li>
+                    <li data-filter=".filter-1" eo-translator="portfolio.tab1">Web Apps</li>
+                    <li data-filter=".filter-2" eo-translator="portfolio.tab2">Mobile Apps</li>
+                    <li data-filter=".filter-3" eo-translator="portfolio.tab3">Design</li>
+                    <li data-filter=".filter-4" eo-translator="portfolio.tab4">Music composition</li>
+                    <li data-filter=".filter-5" eo-translator="portfolio.tab5">Film making</li>
 
                 </ul>
             </div>
@@ -475,12 +477,12 @@
             <div class="page-header-wrapper">
                 <div class="container">
                     <div class="page-header text-center wow fadeInDown " data-wow-delay="0.4s">
-                        <h2 style="argin: 0;
+                        <h2 style="margin: 0;
                         position: relative;
                         font-size: 45px;
-                        font-weight: 700;">Contacts</h2>
+                        font-weight: 700;" eo-translator="contact.title">Contacts</h2>
                         <div class="devider"></div>
-                        <p class="subtitle">All to contact me</p>
+                        <p class="subtitle" eo-translator="contact.sub_title">All to contact me</p>
                     </div>
                 </div>
             </div>
@@ -492,19 +494,20 @@
                     
                         <div class="col-sm-6">
                             <div class="contact-info">
-                                <h4>Learn about me</h4>
+                                <h4 eo-translator="contact.title2">Find me</h4>
                                 <ul class="contact-address">
                                     <li><i class="fa fa-map-marker fa-lg"></i>&nbsp; LOT VIG84 ,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Labrousse Imerintsiatosika ,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Antananrivo 101, Madagascar</li>
                                     <li><i class="fa fa-phone"></i>&nbsp; +261 34 28 381 22</li>
                                     <li><i class="fa fa-envelope"></i> r.mmihary@gmail.com</li>
                                     <li><i class="fab fa-skype"></i> live:r.mmihary </li>
+                                    <li><i class="fab fa-linkedin-in"></i> <a style="color: white;" href="https://www.linkedin.com/in/rilah-mario/">rilah-mario</a></li>
                                 </ul>
                             </div>
                         </div>
                     
                       <div class="col-sm-6">
                             <div class="contact-form">
-                              <h4>Write to us</h4>
+                              <h4 eo-translator="contact.title1">Write to me</h4>
                                 <form role="form">
                                     <div class="form-group">
                                         <input type="text" class="form-control input-lg" placeholder="Your Name" required>
@@ -518,7 +521,7 @@
                                     <div class="form-group">
                                         <textarea class="form-control input-lg" rows="5" placeholder="Message" required></textarea>
                                     </div>
-                                    <button type="submit" class="btn wow bounceInRight" data-wow-delay="0.8s">Send</button>
+                                    <button type="submit" class="btn wow bounceInRight" data-wow-delay="0.8s" eo-translator="contact.send">Send</button>
                                 </form>
                             </div>	
                         </div>
@@ -536,8 +539,8 @@
 <div class="blog" id="blog">
     <div class="container">
         <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-            <p>Apart</p>
-            <h2>My Other Prestation</h2>
+            <p eo-translator="blog.title">Apart</p>
+            <h2 eo-translator="blog.subtitle">My Other Prestation</h2>
         </div>
         <div class="row">
             <div class="col-lg-6">
@@ -546,17 +549,17 @@
                         <img src="img/blog-1.jpg" alt="Blog">
                     </div>
                     <div class="blog-text">
-                        <h2>Event planner</h2>
+                        <h2 eo-translator="blog.title1">Event planner</h2>
                         <div class="blog-meta">
                             <p><i class="far fa-user"></i>Admin</p>
                             <p><i class="far fa-list-alt"></i>Web Design</p>
                             <p><i class="far fa-calendar-alt"></i>01-Jan-2045</p>
                             <p><i class="far fa-comments"></i>5</p>
                         </div>
-                        <p>
+                        <p eo-translator="blog.item1_content">
                             Almost every Saturday, I spend my time organizing events such as weddings or birthdays. Don't hesitate to contact me if you want to immortalize your biggest day. We have multitudes of services to make it unforgettable as Event Band, Sound, Lights, Special Effects, etc...
                         </p>
-                        <a class="btn" href="">Read More <i class="fa fa-angle-right"></i></a>
+                        <a class="btn" href="" eo-translator="blog.btn">Follow my page <i class="fa fa-angle-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -566,17 +569,17 @@
                         <img src="img/blog-2.jpg" alt="Blog">
                     </div>
                     <div class="blog-text">
-                        <h2>Guitarist</h2>
+                        <h2 eo-translator="blog.title2"> Guitarist</h2>
                         <div class="blog-meta">
                             <p><i class="far fa-user"></i>Admin</p>
                             <p><i class="far fa-list-alt"></i>Apps Design</p>
                             <p><i class="far fa-calendar-alt"></i>01-Jan-2045</p>
                             <p><i class="far fa-comments"></i>10</p>
                         </div>
-                        <p>
+                        <p eo-translator="blog.item2_content">
                             I am a Malagasy musician, I studied guitar and I spend almost all my free time playing, writing and composing. I am open to all kind of music, I like to listen to alternative rock and indie music because it calms my soul a lot. I really appreciate the creation of Malagasy artists like Imiangaly and John Oabmar.
                         </p>
-                        <a class="btn" href="">Read More <i class="fa fa-angle-right"></i></a>
+                        <a class="btn" href="" eo-translator="blog.btn">Read More <i class="fa fa-angle-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -600,8 +603,11 @@
                 </div>
             </div>
         </div>
-        <div class="container copyright">
-            <p>&copy; <a href="#">Rilah Mario</a>, All Right Reserved | 2022</p>
+        <div class="container copyright" >
+            <p style="display: inline;">
+                &copy; <a href="#">Rilah Mario</a> 
+                <p eo-translator="footer.right">All Right Reserved | 2022</p>
+            </p>
         </div>
     </div>
 </div>

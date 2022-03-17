@@ -1635,3 +1635,14 @@ ul.contact-address li:last-child {
 ul.contact-address li i {
   margin-right: 10px;
 }
+ul.contact-address .fa {
+  float: left;
+  margin-top: 4px;
+}
+.about p {
+  margin-top: -10;
+}
+
+.need-newline{
+  white-space: pre-wrap;
+}
