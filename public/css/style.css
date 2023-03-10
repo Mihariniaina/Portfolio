@@ -1666,7 +1666,7 @@ select::-ms-expand {
   display: none;
 }
 /* Custom Select wrapper */
-.select {
+.select-wrapper {
   position: relative;
   display: flex;
   /* width: 20em;
@@ -1675,7 +1675,7 @@ select::-ms-expand {
   overflow: hidden;
 }
 /* Arrow */
-.select::after {
+.select-wrapper::after {
   /* content: '\25BC'; */
   position: absolute;
   top: 0;
@@ -1686,11 +1686,12 @@ select::-ms-expand {
   pointer-events: none;
 }
 /* Transition */
-.select:hover::after {
-  color: #f39c12;
+.select-wrapper:hover::after {
+  color: #f39c12; 
 }
 
 .form-select option {
   color: #000;
-  background-color: #17a3b841;
+  background-color: #17a3b841;  
 }
+

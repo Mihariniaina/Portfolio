@@ -42,7 +42,7 @@
                 <a href="#contact" class="nav-item nav-link" eo-translator="header.contact"></a>
                 <a href="#blog" class="nav-item nav-link" eo-translator="header.blog"></a>
                 <a href="" class="nav-item nav-link">
-                    <div class="select">
+                    <div class="select-wrapper">
                         <select class="form-select" id="globalTranslate">
                             <option value="en" >🇺🇸 En</option>
                             <option value="fr" >🇫🇷 Fr</option>
@@ -511,7 +511,7 @@
                             <div class="contact-form">
                               <h4 eo-translator="contact.title1">Write to me</h4>
                                 <form role="form">
-                                    <div class="form-group">
+                                    <div class="form-group" method="post">
                                         <input type="text" class="form-control input-lg" placeholder="Your Name" required>
                                     </div>
                                     <div class="form-group">
@@ -523,7 +523,7 @@
                                     <div class="form-group">
                                         <textarea class="form-control input-lg" rows="5" placeholder="Message" required></textarea>
                                     </div>
-                                    <button type="submit" class="btn wow bounceInRight" data-wow-delay="0.8s" eo-translator="contact.send">Send</button>
+                                    <button type="submit" class="btn wow bounceInRight" data-wow-delay="0.8s" onclick="sendEmail()" eo-translator="contact.send">Send</button>
                                 </form>
                             </div>	
                         </div>
@@ -641,6 +641,9 @@
 <script src="mail/jqBootstrapValidation.min.js"></script>
 <script src="mail/contact.js"></script>
 
+<!-- Sending email -->
+<script src="https://smtpjs.com/v3/smtp.js"></script> 
+
 <!-- Template Javascript -->
 <script src="js/main.js"></script>
 
@@ -649,4 +652,21 @@
 
 <!-- The main script. -->
 <script src="./js/script.js"></script>
+
+<script>
+    function sendEmail() {
+        console.log("aay i");
+        Email.send({
+        Host: "smtp.gmail.com",
+        Username : "r.mmihary@gmail.com",
+        Password : "Mihariniaina0303",
+        To : 'mihartevent101@gmail.com',
+        From : "r.mmihary@gmail.com",
+        Subject : "Test",
+        Body : "Bonjour, Body",
+        }).then(
+            message => alert("mail sent successfully")
+        );
+    }
+</script>
 </body>
