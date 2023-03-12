@@ -97,8 +97,8 @@ window.addEventListener('load', () => {
         'q1': '"Ease of learning process, I\'m always ready to discover a new technology and a increase my experience."',
         'q2': '"The present is the anvil where the future is made."',
         'q3': '"A problem is a chance for you to do your best."',
-        'q4': '"We become what we think about."',
-        'pers1': "Fullstack developer",
+        'q4': 'Victor Hugo',
+        'pers1': "Digital content creator",
         'pers2': "Jazz Musician",
         'pers3': "Author",
         'pers4': "Poet"
@@ -218,8 +218,8 @@ window.addEventListener('load', () => {
         'q1': '"Apte à apprendre des nouvelles choses, je suis toujours prêt à découvrir des nouvelles technologies et accroître mon expérience."',
         'q2': '"Le présent est l\'enclume où se fait l\'avenir."',
         'q3': '"Un problème est une chance pour vous de faire de votre mieux."',
-        'q4': '"Nous devenons ce à quoi nous pensons."',
-        'pers1': "Développeur fullstack",
+        'q4': 'Victor Hugo',
+        'pers1': "Créateur digital",
         'pers2': "Musicien de Jazz",
         'pers3': "Auteur",
         'pers4': "Poète"
@@ -340,7 +340,7 @@ window.addEventListener('load', () => {
         'q2': '"Ny ankehitriny no lasitra andrafetana ny ho avy."',
         'q3': '"Ny olana iray dia tombony ahafahanao manome izay tsara indrindra avy aminao."',
         'q4': '"Izay ao antsaintsika no handrafitra antsika."',
-        'pers1': "Fullstack developer",
+        'pers1': "Digital content creator",
         'pers2': "Mpitendry mozika Jazz",
         'pers3': "Mpanoratra",
         'pers4': "Poety"

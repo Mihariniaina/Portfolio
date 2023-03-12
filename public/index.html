@@ -367,10 +367,10 @@
                     <img src="img/victor_hugo.jpg" alt="Image">
                 </div>
                 <div class="testimonial-text">
-                    <p>
+                    <p eo-translator="quotes.q2">
                         "The present is the anvil where the future is made."
                     </p>
-                    <h3 eo-translator="quotes.q4">Victor Hugo</h3>
+                    <h3>Victor Hugo</h3>
                     <h4 eo-translator="quotes.pers4">Poet</h4>
                 </div>
             </div>
@@ -523,7 +523,7 @@
                                     <div class="form-group">
                                         <textarea class="form-control input-lg" rows="5" placeholder="Message" required></textarea>
                                     </div>
-                                    <button type="submit" class="btn wow bounceInRight" data-wow-delay="0.8s" onclick="sendEmail()" eo-translator="contact.send">Send</button>
+                                    <button type="submit" class="btn wow bounceInRight" data-wow-delay="0.8s" onclick="sendEmail2()" eo-translator="contact.send">Send</button>
                                 </form>
                             </div>	
                         </div>
@@ -653,14 +653,62 @@
 <!-- The main script. -->
 <script src="./js/script.js"></script>
 
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+
+
 <script>
+    function sendMail(){
+        const nodemailer = require('nodemailer');
+        let transporter = nodemailer.createTransport(
+        {
+        host: "mail.tsangana.com",
+        secure: true,
+        port: 465,
+        auth: {
+            user: "send.mail.semwee@tsangana.com",
+            pass: "SenMail+456"
+        }
+        }
+        );
+        console.log("sendMail is called");
+        let email = "r.mmihary@gmail.com";
+        let subject = "test";
+        let bodyFile = "testBody";
+        try {
+            const mailOptions = {
+                from: '"Semwee" <send.mail.semwee@tsangana.com>',
+                to: email,
+                subject: subject,
+                html:bodyFile
+            };
+            return new Promise((resolve,reject)=> {
+                transporter.sendMail(mailOptions, function(error, info){
+                    if (error) {
+                        throw error;
+                    } else {
+                        console.log('Email sent: ' + info.response);
+                        resolve(true)
+                    }
+                });
+            }) 
+        } catch (error) {
+            throw error;
+        }
+    }
+
     function sendEmail() {
-        console.log("aay i");
+        console.log("calling send email function1");
         Email.send({
-        Host: "smtp.gmail.com",
-        Username : "r.mmihary@gmail.com",
-        Password : "Mihariniaina0303",
-        To : 'mihartevent101@gmail.com',
+        Host: "mail.tsangana.com",
+        secure: true,
+        port: 465,
+        // auth: {
+        //     user: "send.mail.semwee@tsangana.com",
+        //     pass: "SenMail+456"
+        // },
+        Username : "send.mail.semwee@tsangana.com",
+        Password : "SenMail+456",
+        To : 'r.mmihary@gmail.com',
         From : "r.mmihary@gmail.com",
         Subject : "Test",
         Body : "Bonjour, Body",
@@ -668,5 +716,42 @@
             message => alert("mail sent successfully")
         );
     }
+
+    function sendEmail2(){
+        console.log("send 2");
+        Email.send({
+        Host : "mail.tsangana.com",
+        Username : "Rilah Mario",
+        Password : "SenMail+456",
+        To : 'r.mmihary@gmail.com',
+        From : "send.mail.semwee@tsangana.com",
+        Subject : "This is the subject",
+        Body : "And this is the body"
+        }).then(
+            message => alert(message)
+        );
+    }
+
+</script>
+
+<script type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.0/dist/email.min.js">
+</script>
+<script type="text/javascript">
+  (function () {
+    emailjs.init("YOUR_USER_ID"); //use your USER ID
+  })();
+</script>
+<script>
+  var templateParams = {
+    name: 'Sender',
+    notes: 'Test email'
+  };
+  emailjs.send('<email-service-ID>', '<email-template-ID>', templateParams) //Insert your email service ID and email template ID
+    .then(function (response) {
+      console.log('SUCCESS!', response.status, response.text);
+    }, function (error) {
+      console.log('FAILED...', error);
+    });
 </script>
 </body>
