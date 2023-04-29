@@ -1695,3 +1695,72 @@ select::-ms-expand {
   background-color: #17a3b841;  
 }
 
+#notification {
+  display: flex;
+  background: #1dc844c9;
+  position: fixed;
+  height: 44px;
+  color: white;
+  bottom: 15px;
+  line-height: 1;
+  opacity: 0;
+  visibility: hidden;
+  right: 75px;
+  padding: 0px 41px 0px 21px;
+  justify-content: center;
+  align-items: center;
+}
+
+#notification p {
+  margin: auto;
+}
+
+#notification.show {
+  -webkit-transition: opacity .6s ease-out, visibility 0s linear 0s;
+  -o-transition: opacity .6s ease-out, visibility 0s linear 0s;
+  transition: opacity .6s ease-out, visibility 0s linear 0s;
+  visibility: visible;
+  opacity: 1;
+}
+
+.message{
+  right: 115px;
+}
+
+.closeBtn {
+  cursor: pointer;
+}
+
+
+#error {
+  display: flex;
+  background: #f85151c9;
+  position: fixed;
+  height: 44px;
+  color: white;
+  bottom: 15px;
+  opacity: 0;
+  visibility: hidden;
+  line-height: 1;
+  right: 75px;
+  padding: 0px 41px 0px 21px;
+  justify-content: center;
+  align-items: center;
+}
+
+#error p {
+  margin: auto;
+}
+
+#error.show {
+  -webkit-transition: opacity .6s ease-out, visibility 0s linear 0s;
+  -o-transition: opacity .6s ease-out, visibility 0s linear 0s;
+  transition: opacity .6s ease-out, visibility 0s linear 0s;
+  visibility: visible;
+  opacity: 1;
+}
+
+.closeBtn {
+  position: fixed;
+  right: 90px;
+}

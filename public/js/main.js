@@ -107,3 +107,64 @@
     
 })(jQuery);
 
+function sendMail(){
+    var senderName = document.getElementById('senderName').value;
+    var senderEmail = document.getElementById('senderEmail').value;
+    var objectEmail = document.getElementById('object').value;
+    var messageEmail = document.getElementById('message').value;
+    if(senderName && senderEmail && objectEmail && messageEmail){
+      (function ($) {
+        const body = {
+          senderName: senderName,
+          senderEmail: senderEmail,
+          objectEmail: objectEmail,
+          messageEmail:messageEmail
+    
+        };
+        //show loader
+        $('#loader').addClass('show');
+        $.post("http://localhost:3000/sendMail", body, (data, status) => {
+          console.log("data: ",data);
+          console.log("status: ",status);
+          //if succes => show succes notif
+          if(data.status == 200){
+            $('#notification').addClass('show');
+            setTimeout(function () {
+              $('#notification').removeClass('show');
+            }, 3000);
+          } else{
+            $('#error').addClass('show');
+            setTimeout(function () {
+              $('#error').removeClass('show');
+            }, 3000);
+          }
+          
+          //reset form value
+          document.getElementById('senderName').value = "";
+          document.getElementById('senderEmail').value = "";
+          document.getElementById('object').value = "";
+          document.getElementById('message').value = "";
+          //close loader
+          $('#loader').removeClass('show');
+        });
+      })(jQuery);
+    }
+    return false;
+}
+
+function closeNotification(status){
+    (function ($) {
+        if(status == 200){
+            $('#notification').addClass('show');
+            setTimeout(function () {
+              $('#notification').removeClass('show');
+            }, 3000);
+          } else{
+            $('#error').addClass('show');
+            setTimeout(function () {
+              $('#error').removeClass('show');
+            }, 3000);
+          }
+    })(jQuery);
+}
+

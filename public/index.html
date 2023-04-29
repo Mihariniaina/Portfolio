@@ -71,8 +71,8 @@
                         <div class="typed-text" eo-translator="home.sub">Web Designer, Web Developer, Apps Designer, Apps Developer</div>
                     </div>
                     <div class="hero-btn">
-                        <a class="btn" href="" eo-translator="home.hire"></a>
-                        <a class="btn" href="" eo-translator="home.contact_me"></a>
+                        <a class="btn" href="#contact" eo-translator="home.hire"></a>
+                        <a class="btn" href="#contact" eo-translator="home.contact_me"></a>
                     </div>
                 </div>
             </div>
@@ -510,20 +510,20 @@
                       <div class="col-sm-6">
                             <div class="contact-form">
                               <h4 eo-translator="contact.title1">Write to me</h4>
-                                <form role="form">
-                                    <div class="form-group" method="post">
-                                        <input type="text" class="form-control input-lg" placeholder="Your Name" required>
+                                <form onsubmit="return sendMail()">
+                                    <div class="form-group">
+                                        <input type="text" id="senderName" class="form-control input-lg" placeholder="Your Name" required>
                                     </div>
                                     <div class="form-group">
-                                        <input type="email" class="form-control input-lg" placeholder="E-mail" required>
+                                        <input type="email" id="senderEmail" class="form-control input-lg" placeholder="E-mail" required>
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" class="form-control input-lg" placeholder="Subject" required>
+                                        <input type="text" id="object" class="form-control input-lg" placeholder="Subject" required>
                                     </div>
                                     <div class="form-group">
-                                        <textarea class="form-control input-lg" rows="5" placeholder="Message" required></textarea>
+                                        <textarea id="message" class="form-control input-lg" rows="5" placeholder="Messages" required></textarea>
                                     </div>
-                                    <button type="submit" class="btn wow bounceInRight" data-wow-delay="0.8s" onclick="sendEmail2()" eo-translator="contact.send">Send</button>
+                                    <button class="btn wow bounceInRight" data-wow-delay="0.8s" eo-translator="contact.send">Send</button>
                                 </form>
                             </div>	
                         </div>
@@ -618,7 +618,14 @@
 
 <!-- Back to top button -->
 <a href="#" class="btn back-to-top"><i class="fa fa-chevron-up"></i></a>
-
+<div id="notification">
+    <p class="message" eo-translator="notif.emailSent"> Email sent!</p>
+    <p class="closeBtn" onclick="closeNotification(500)"> x </p>
+</div>
+<div id="error">
+    <div class="message" eo-translator="notif.emailFailled"> Failed to send email!</div>
+    <div class="closeBtn" onclick="closeNotification(500)"> x </div>
+</div>
 
 <!-- Pre Loader -->
 <div id="loader" class="show">
@@ -654,85 +661,6 @@
 <script src="./js/script.js"></script>
 
 <script src="https://smtpjs.com/v3/smtp.js"></script>
-
-
-<script>
-    function sendMail(){
-        const nodemailer = require('nodemailer');
-        let transporter = nodemailer.createTransport(
-        {
-        host: "mail.tsangana.com",
-        secure: true,
-        port: 465,
-        auth: {
-            user: "send.mail.semwee@tsangana.com",
-            pass: "SenMail+456"
-        }
-        }
-        );
-        console.log("sendMail is called");
-        let email = "r.mmihary@gmail.com";
-        let subject = "test";
-        let bodyFile = "testBody";
-        try {
-            const mailOptions = {
-                from: '"Semwee" <send.mail.semwee@tsangana.com>',
-                to: email,
-                subject: subject,
-                html:bodyFile
-            };
-            return new Promise((resolve,reject)=> {
-                transporter.sendMail(mailOptions, function(error, info){
-                    if (error) {
-                        throw error;
-                    } else {
-                        console.log('Email sent: ' + info.response);
-                        resolve(true)
-                    }
-                });
-            }) 
-        } catch (error) {
-            throw error;
-        }
-    }
-
-    function sendEmail() {
-        console.log("calling send email function1");
-        Email.send({
-        Host: "mail.tsangana.com",
-        secure: true,
-        port: 465,
-        // auth: {
-        //     user: "send.mail.semwee@tsangana.com",
-        //     pass: "SenMail+456"
-        // },
-        Username : "send.mail.semwee@tsangana.com",
-        Password : "SenMail+456",
-        To : 'r.mmihary@gmail.com',
-        From : "r.mmihary@gmail.com",
-        Subject : "Test",
-        Body : "Bonjour, Body",
-        }).then(
-            message => alert("mail sent successfully")
-        );
-    }
-
-    function sendEmail2(){
-        console.log("send 2");
-        Email.send({
-        Host : "mail.tsangana.com",
-        Username : "Rilah Mario",
-        Password : "SenMail+456",
-        To : 'r.mmihary@gmail.com',
-        From : "send.mail.semwee@tsangana.com",
-        Subject : "This is the subject",
-        Body : "And this is the body"
-        }).then(
-            message => alert(message)
-        );
-    }
-
-</script>
 
 <script type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.0/dist/email.min.js">

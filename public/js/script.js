@@ -17,6 +17,10 @@ window.addEventListener('load', () => {
   // Creating a dictionary
   var dictionary = {
     'en': {
+      'notif': {
+        'emailSent': 'Email sent!',
+        'emailFailled': 'Failed to send email'
+      },
       'header': {
         'home': 'Home',
         'about': 'About',
@@ -138,6 +142,10 @@ window.addEventListener('load', () => {
       }
     },
     'fr': {
+      'notif': {
+        'emailSent': 'Email envoyé!',
+        'emailFailled': 'Échec de l\'envoi de l\'e-mail'
+      },
       'header': {
         'home': 'Accueil',
         'about': 'Profil',
@@ -259,6 +267,10 @@ window.addEventListener('load', () => {
       }
     },
     'mg': {
+      'notif': {
+        'emailSent': 'Lasa ny mailaka!',
+        'emailFailled': 'Tsy lasa ny mailaka!'
+      },
       'header': {
         'home': 'Fandraisana',
         'about': 'Mombamomba',
