@@ -866,6 +866,7 @@ border-color: transparent #dddddd transparent transparent;
 .portfolio .portfolio-img {
   position: relative;
   overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio .portfolio-img img {
@@ -1601,6 +1602,7 @@ border-color: transparent #dddddd transparent transparent;
 	width: 100%;
 	height: 23px;
 	background: url('../img/devider.png') no-repeat center center;
+  transform: rotate(180deg);
 	margin: 5px 0 10px;
 }
 
