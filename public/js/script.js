@@ -56,7 +56,7 @@ window.addEventListener('load', () => {
         'creative': 'Creative',
         'hobbies': 'Areas of interest',
         'music': 'Musical arrangement',
-        'sweaming': 'Seaming',
+        'sweaming': 'Sweaming',
         'filmaking': 'Film making',
         'cv': 'Download my CV'
       },
