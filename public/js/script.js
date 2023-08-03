@@ -138,7 +138,7 @@ window.addEventListener('load', () => {
         'btn': 'Follow my page'
       },
       'footer': {
-        'right': 'All Right Reserved | 2022',
+        'right': 'All Right Reserved | 2023',
       }
     },
     'fr': {
@@ -263,7 +263,7 @@ window.addEventListener('load', () => {
         'btn': 'Suivre ma page'
       },
       'footer': {
-        'right': 'Tous droits réservés | 2022',
+        'right': 'Tous droits réservés | 2023',
       }
     },
     'mg': {
@@ -388,7 +388,7 @@ window.addEventListener('load', () => {
         'btn': 'Hanaraka ny pejiko'
       },
       'footer': {
-        'right': 'Copyright | 2022',
+        'right': 'Copyright | 2023',
       }
     }
   };
