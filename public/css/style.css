@@ -1,6 +1,13 @@
 /*******************************/
 /********* General CSS *********/
 /*******************************/
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../font/montserrat.woff2') format('woff2');
+  font-display: swap;
+}
+
+/* Apply the custom font to the body */
 body {
   color: #797979;
   background: #ffffff;
