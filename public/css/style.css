@@ -1647,6 +1647,7 @@ ul.contact-address li i {
 ul.contact-address .fa {
   float: left;
   margin-top: 4px;
+  width: 19px;
 }
 .about p {
   margin-top: -10;
