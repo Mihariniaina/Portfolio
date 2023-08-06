@@ -124,11 +124,12 @@ function sendMail(){
         //show loader
         $('#loader').addClass('show');
         // $.post("http://localhost:3000/sendMail", body, (data, status) => {
-        $.post("https://api.rilah-mario.com/sendMail", body, (data, status) => {
+        $.post("https://api.rilah-mario.com/sendMail", body, (data, status, jqXHR) => {
           console.log("data: ",data);
           console.log("status: ",status);
+          console.log("jqXHR.status: ",jqXHR.status);
           //if succes => show succes notif
-          if(data.status == 200){
+          if(jqXHR.status == 200){
             $('#notification').addClass('show');
             setTimeout(function () {
               $('#notification').removeClass('show');
