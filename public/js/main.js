@@ -123,7 +123,8 @@ function sendMail(){
         };
         //show loader
         $('#loader').addClass('show');
-        $.post("http://localhost:3000/sendMail", body, (data, status) => {
+        // $.post("http://localhost:3000/sendMail", body, (data, status) => {
+        $.post("https://api.rilah-mario.com/sendMail", body, (data, status) => {
           console.log("data: ",data);
           console.log("status: ",status);
           //if succes => show succes notif
