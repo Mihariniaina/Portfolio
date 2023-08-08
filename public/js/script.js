@@ -51,12 +51,12 @@ window.addEventListener('load', () => {
         'english': 'English',
         'mother_tongue': 'Malagasy : Mother tongue',
         'strengths': 'Strengths',
-        'ponctual': 'Poncutal',
+        'ponctual': 'Ponctual',
         'ease': 'Ease of learning process',
         'creative': 'Creative',
         'hobbies': 'Areas of interest',
         'music': 'Musical arrangement',
-        'sweaming': 'Sweaming',
+        'swimming': 'Swimming',
         'filmaking': 'Film making',
         'cv': 'Download my CV'
       },
@@ -181,7 +181,7 @@ window.addEventListener('load', () => {
         'creative': 'Créative',
         'hobbies': 'Centre d\'intérets',
         'music': 'Musical arrangement',
-        'sweaming': 'Natation',
+        'swimming': 'Natation',
         'filmaking': 'Cinématographie',
         'cv': 'Télécharger mon CV'
       },
@@ -306,7 +306,7 @@ window.addEventListener('load', () => {
         'creative': 'Tia mamorona',
         'hobbies': 'Fialamboly',
         'music': 'Fandrindrana mozika',
-        'sweaming': 'Milomano',
+        'swimming': 'Milomano',
         'filmaking': 'Famonkarana Oronantsary',
         'cv': 'Haka ny CV ako'
       },
