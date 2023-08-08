@@ -274,7 +274,7 @@ window.addEventListener('load', () => {
       'header': {
         'home': 'Fandraisana',
         'about': 'Mombamomba',
-        'experience': 'Fahaiza-manao',
+        'experience': 'Traikefa',
         'service': 'Tolotra',
         'portfolio': 'Portfolio',
         'quote': 'Notsongaina',
@@ -290,7 +290,7 @@ window.addEventListener('load', () => {
       'about': {
         'subtitle': 'Mombamomba ahy',
         'title': 'Fullstack developer',
-        'desc': 'MIHARINIAINA Rilah Mario no anarako, liana amin\'ny tontolon\'ny solosaina sy ny tekinolojia hatramin\'ny faha-14 taonako. Taorian\'ny nahazoako ny mari-pahaizana "Maîtrise II en Mobiquity, Big Data and Systems Integration" tao amin\'ny Oniversiten\'i Nice Sofia Antipolis, dia mitady asa hampiharana ny fahalalako aho ary hampitombo ny fahaiza-manaoko amin\'ny sehatry ny IT. ',
+        'desc': 'MIHARINIAINA Rilah Mario no anarako, liana amin\'ny tontolon\'ny solosaina sy ny tekinolojia hatramin\'ny faha-14 taonako. Taorian\'ny nahazoako ny mari-pahaizana "Maîtrise II en Mobiquity, Big Data and Systems Integration" tao amin\'ny Oniversiten\'i Nice Sofia Antipolis, dia mitady asa hampiharana ny fahalalako aho ary hampitombo ny traikefako amin\'ny sehatry ny IT. ',
         'information': 'Informations',
         'born': 'Teraka ny 3 Martsa 1998',
         'malagasy': 'Malagasy',
@@ -300,7 +300,7 @@ window.addEventListener('load', () => {
         'french': 'Frantsay',
         'english': 'Anglisy',
         'mother_tongue': 'Malagasy : Tenimpirenena',
-        'strengths': 'Fahaizamanao',
+        'strengths': 'Mampiavaka',
         'ponctual': 'Marim-potoana',
         'ease': 'Mora mahay zava-baovao',
         'creative': 'Tia mamorona',
