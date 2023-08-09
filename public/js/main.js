@@ -148,6 +148,14 @@ function sendMail(){
           document.getElementById('message').value = "";
           //close loader
           $('#loader').removeClass('show');
+        }).fail((jqXHR, textStatus, errorThrown) => {
+            // Error callback
+            $('#loader').removeClass('show');
+            $('#error').addClass('show');
+            setTimeout(function () {
+                $('#error').removeClass('show');
+            }, 3000);
+            console.error("Request error:", textStatus, errorThrown);
         });
       })(jQuery);
     }
