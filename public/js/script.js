@@ -382,7 +382,7 @@ window.addEventListener('load', () => {
         'title': 'Hafa',
         'subtitle': 'Ireo asako hafa',
         'title1': 'Mpikarakara lanonana',
-        'item1_content': 'Ankoatra ny maha "Développeur" ahy dia mikarakara lanonana toy ny mariazy na aniversaire no ataoko matetika isaky ny faran\'ny erin\'andro. Maro ny tolotra afaka omenay toy ny "Orchestre, Sonorisation, Lumières, Effets spéciaux, sns... Aza misalasala manantona fa vonona ny hampiavaka ny fetinao izahay.',
+        'item1_content': 'Ankoatra ny maha "Développeur" ahy dia mikarakara lanonana toy ny mariazy na aniversaire no ataoko matetika isaky ny faran\'ny erin\'andro. Maro ny tolotra afaka omenay toy ny Orchestre, Sonorisation, Lumières, Effets spéciaux, sns... Aza misalasala manantona fa vonona ny hampiavaka ny fetinao izahay.',
         'title2': 'Mpitendry guitara malagasy',
         'item2_content': 'Mpiangaly mozika malagasy aho, nandalina manokana ny guitare. Isaky ny manana fotoana malalaka aho dia mandalina, manoratra sy mandrindra. Mivelatra amin\'ny mozija rehetra, tia mihaino ny gadona "alternative-rock" sy "Indie-music" noho izy mahatony tanteraka ny fanahiko. Tena tiako ihany koa ny mozikan\'ny mpanakanto malagasy toa an\'i Imiangaly, John Oabmar.',
         'btn': 'Hanaraka ny pejiko'
