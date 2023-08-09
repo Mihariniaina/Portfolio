@@ -76,7 +76,7 @@ a:focus {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #ffffff;
+  background: #ffffff47;
   opacity: 0;
   visibility: hidden;
   -webkit-transition: opacity .3s ease-out, visibility 0s linear .3s;
