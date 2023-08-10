@@ -124,39 +124,51 @@ function sendMail(){
         //show loader
         $('#loader').addClass('show');
         // $.post("http://localhost:3000/sendMail", body, (data, status) => {
-        $.post("https://api.rilah-mario.com/sendMail", body, (data, status, jqXHR) => {
-          console.log("data: ",data);
-          console.log("status: ",status);
-          console.log("jqXHR.status: ",jqXHR.status);
-          //if succes => show succes notif
-          if(jqXHR.status == 200){
-            $('#notification').addClass('show');
-            setTimeout(function () {
-              $('#notification').removeClass('show');
-            }, 3000);
-          } else{
-            $('#error').addClass('show');
-            setTimeout(function () {
-              $('#error').removeClass('show');
-            }, 3000);
-          }
+
+        console.log("aaa0");
+
+        $.ajax({
+            url: "http://api.rilah-mario.com/sendMail",
+            type: "POST",
+            data: body,
+            dataType: "json",
+            crossDomain: true,  // Indicate that this is a cross-domain request
+            xhrFields: {
+              withCredentials: false  // Include cookies in the request if necessary
+            },
+            success: function(data, status, jqXHR) {
+              console.log("data: ", data);
+              console.log("status: ", status);
+              console.log("jqXHR.status: ", jqXHR.status);
+              
+              if (jqXHR.status === 200) {
+                $('#notification').addClass('show');
+                setTimeout(function () {
+                  $('#notification').removeClass('show');
+                }, 3000);
+              } else {
+                $('#error').addClass('show');
+                setTimeout(function () {
+                  $('#error').removeClass('show');
+                }, 3000);
+              }
           
-          //reset form value
-          document.getElementById('senderName').value = "";
-          document.getElementById('senderEmail').value = "";
-          document.getElementById('object').value = "";
-          document.getElementById('message').value = "";
-          //close loader
-          $('#loader').removeClass('show');
-        }).fail((jqXHR, textStatus, errorThrown) => {
-            // Error callback
-            $('#loader').removeClass('show');
-            $('#error').addClass('show');
-            setTimeout(function () {
+              document.getElementById('senderName').value = "";
+              document.getElementById('senderEmail').value = "";
+              document.getElementById('object').value = "";
+              document.getElementById('message').value = "";
+              
+              $('#loader').removeClass('show');
+            },
+            error: function(jqXHR, textStatus, errorThrown) {
+              $('#loader').removeClass('show');
+              $('#error').addClass('show');
+              setTimeout(function () {
                 $('#error').removeClass('show');
-            }, 3000);
-            console.error("Request error:", textStatus, errorThrown);
-        });
+              }, 3000);
+              console.error("Request error:", textStatus, errorThrown);
+            }
+        });  
       })(jQuery);
     }
     return false;
@@ -170,7 +182,7 @@ function closeNotification(status){
               $('#notification').removeClass('show');
             }, 3000);
           } else{
-            $('#error').addClass('show');
+            $('#error').addClass('show');false
             setTimeout(function () {
               $('#error').removeClass('show');
             }, 3000);
