@@ -74,8 +74,8 @@
                             <div class="typed-text" eo-translator="home.sub">Web developer, Apps developer, Film director, Music arranger</div>
                         </div>
                         <div class="hero-btn">
-                            <a class="btn" href="#contact" eo-translator="home.hire"></a>
-                            <a class="btn" href="#contact" eo-translator="home.contact_me"></a>
+                            <a class="btn" href="#contact" eo-translator="home.hire" onclick="updateClickStat('hire')"></a>
+                            <a class="btn" href="#contact" eo-translator="home.contact_me" onclick="updateClickStat('contact')"></a>
                         </div>
                     </div>
                 </div>
@@ -118,11 +118,11 @@
                                             <li><i class="fa fa-flag"></i> <p eo-translator="about.malagasy"> </p> </li>
                                             <li><i class="fa fa-user"></i> <p eo-translator="about.single"> </p> </li>
                                             <li><i class="fa fa-car"></i> <p eo-translator="about.driving"> </p> </li>
-                                            <li><i class="fa fa-map-marker fa-lg"></i> <a style="color: #797979;" href="https://goo.gl/maps/MvTTe16AFj93LNbA9" target="_blank" rel="noopener noreferrer">Soavimasoandro,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Antananrivo 101, <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Madagascar</a></li>
-                                            <li><i class="fa fa-phone"></i><a style="color: #797979;" href="https://wa.me/261342838122" target="_blank" rel="noopener noreferrer">+261 34 28 381 22</a></li>
-                                            <li><i class="fa fa-envelope"></i> <a style="color: #797979;" href="#contact">r.mmihary@gmail.com</a></li>
-                                            <li><i class="fab fa-skype"></i> <a style="color: #797979;" href="https://join.skype.com/invite/GRabaELcG1zL" target="_blank" rel="noopener noreferrer">live:r.mmihary</a></li>
-                                            <li><i class="fab fa-linkedin-in"></i> <a style="color: #797979;" href="https://www.linkedin.com/in/rilah-mario/">rilah-mario</a></li>
+                                            <li><i class="fa fa-map-marker fa-lg"></i> <a style="color: #797979;" href="https://goo.gl/maps/MvTTe16AFj93LNbA9" target="_blank" rel="noopener noreferrer" onclick="updateClickStat('googleMap')">Soavimasoandro,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Antananrivo 101, <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Madagascar</a></li>
+                                            <li><i class="fa fa-phone"></i><a style="color: #797979;" href="https://wa.me/261342838122" target="_blank" rel="noopener noreferrer" onclick="updateClickStat('whatsapp')">+261 34 28 381 22</a></li>
+                                            <li><i class="fa fa-envelope"></i> <a style="color: #797979;" href="#contact" onclick="updateClickStat('email')">contact@rilah-mario.com</a></li>
+                                            <li><i class="fab fa-skype"></i> <a style="color: #797979;" href="https://join.skype.com/invite/GRabaELcG1zL" target="_blank" rel="noopener noreferrer" onclick="updateClickStat('skype')">live:r.mmihary</a></li>
+                                            <li><i class="fab fa-linkedin-in"></i> <a style="color: #797979;" href="https://www.linkedin.com/in/rilah-mario/" target="_blank" rel="noopener noreferrer" onclick="updateClickStat('linkedin')">rilah-mario</a></li>
                                         </ul>
                                 </div>
                                 <div class="col-md-6">
@@ -152,7 +152,7 @@
                             </div>
                         </div>
                             <form method="get" action="/CV-RilahMarioMIHARINIAINA-FR-2023.pdf" target="_blank" rel="noopener noreferrer">
-                                <button class="btn" eo-translator="about.cv">Download my CV</button>
+                                <button class="btn" eo-translator="about.cv" onclick="updateClickStat('downloadCV')">Download my CV</button>
                             </form>
                     </div>
                 </div>
@@ -412,7 +412,7 @@
                         </div>
                         <div class="portfolio-text">
                             <h3>Semwee.app</h3>
-                            <a class="btn" href="https://semwee.app/" target="_blank" rel="noopener noreferrer"><i class="fa fa-external-link-alt fa-xs"></i></a>
+                            <a class="btn" href="https://semwee.app/" target="_blank" rel="noopener noreferrer" onclick="updateClickStat('semwee')"><i class="fa fa-external-link-alt fa-xs"></i></a>
                         </div>
                     </div>
                 </div>
@@ -423,7 +423,7 @@
                         </div>
                         <div class="portfolio-text">
                             <h3>FacetChecker.com</h3>
-                            <a class="btn" href="https://facetchecker.com/" target="_blank" rel="noopener noreferrer"><i class="fa fa-external-link-alt fa-xs"></i></a>
+                            <a class="btn" href="https://facetchecker.com/" target="_blank" rel="noopener noreferrer" onclick="updateClickStat('facetchecker')"><i class="fa fa-external-link-alt fa-xs"></i></a>
                         </div>
                     </div>
                 </div>
@@ -434,7 +434,7 @@
                         </div>
                         <div class="portfolio-text">
                             <h3>Scoplan.com</h3>
-                            <a class="btn" href="https://www.scoplan.com/" target="_blank" rel="noopener noreferrer"><i class="fa fa-external-link-alt fa-xs"></i></a>
+                            <a class="btn" href="https://www.scoplan.com/" target="_blank" rel="noopener noreferrer" onclick="updateClickStat('scoplanWeb')"><i class="fa fa-external-link-alt fa-xs"></i></a>
                         </div>
                     </div>
                 </div>
@@ -445,7 +445,7 @@
                         </div>
                         <div class="portfolio-text">
                             <h3>Scoplan CT</h3>
-                            <a class="btn" href="https://play.google.com/store/apps/details?id=ubitik.scoplan.app&hl=fr" target="_blank" rel="noopener noreferrer"><i class="fa fa-external-link-alt fa-xs"></i></a>
+                            <a class="btn" href="https://play.google.com/store/apps/details?id=ubitik.scoplan.app&hl=fr" target="_blank" rel="noopener noreferrer" onclick="updateClickStat('scoplanCT')"><i class="fa fa-external-link-alt fa-xs"></i></a>
                         </div>
                     </div>
                 </div>
@@ -456,7 +456,7 @@
                         </div>
                         <div class="portfolio-text">
                             <h3>Scoplan Particulier</h3>
-                            <a class="btn" href="https://play.google.com/store/apps/details?id=com.ubitik.scoplan&hl=fr" target="_blank" rel="noopener noreferrer"><i class="fa fa-external-link-alt fa-xs"></i></a>
+                            <a class="btn" href="https://play.google.com/store/apps/details?id=com.ubitik.scoplan&hl=fr" target="_blank" rel="noopener noreferrer" onclick="updateClickStat('scoplanPART')"><i class="fa fa-external-link-alt fa-xs"></i></a>
                         </div>
                     </div>
                 </div>
@@ -467,7 +467,7 @@
                         </div>
                         <div class="portfolio-text">
                             <h3>Scoplan Terrain</h3>
-                            <a class="btn" href="https://play.google.com/store/apps/details?id=com.scoplan.terrain&hl=fr" target="_blank" rel="noopener noreferrer"><i class="fa fa-external-link-alt fa-xs"></i></a>
+                            <a class="btn" href="https://play.google.com/store/apps/details?id=com.scoplan.terrain&hl=fr" target="_blank" rel="noopener noreferrer" onclick="updateClickStat('scoplanTERRAIN')"><i class="fa fa-external-link-alt fa-xs"></i></a>
                         </div>
                     </div>
                 </div>
@@ -478,7 +478,7 @@
                         </div>
                         <div class="portfolio-text">
                             <h3>Scoplan VEFA</h3>
-                            <a class="btn" href="https://play.google.com/store/apps/details?id=scoplan.vefa.app&hl=fr" target="_blank" rel="noopener noreferrer"><i class="fa fa-external-link-alt fa-xs"></i></a>
+                            <a class="btn" href="https://play.google.com/store/apps/details?id=scoplan.vefa.app&hl=fr" target="_blank" rel="noopener noreferrer" onclick="updateClickStat('scoplanVEFA')"><i class="fa fa-external-link-alt fa-xs"></i></a>
                         </div>
                     </div>
                 </div>
@@ -489,7 +489,7 @@
                         </div>
                         <div class="portfolio-text">
                             <h3>Scoplan Artisan</h3>
-                            <a class="btn" href="https://play.google.com/store/apps/details?id=scoplan.artisan.com&hl=fr" target="_blank" rel="noopener noreferrer"><i class="fa fa-external-link-alt fa-xs"></i></a>
+                            <a class="btn" href="https://play.google.com/store/apps/details?id=scoplan.artisan.com&hl=fr" target="_blank" rel="noopener noreferrer" onclick="updateClickStat('scoplanARTI')"><i class="fa fa-external-link-alt fa-xs"></i></a>
                         </div>
                     </div>
                 </div>
@@ -500,7 +500,7 @@
                         </div>
                         <div class="portfolio-text">
                             <h3>Scoplan Vente</h3>
-                            <a class="btn" href="https://play.google.com/store/apps/details?id=com.scoplan.vente&hl=fr" target="_blank" rel="noopener noreferrer"><i class="fa fa-external-link-alt fa-xs"></i></a>
+                            <a class="btn" href="https://play.google.com/store/apps/details?id=com.scoplan.vente&hl=fr" target="_blank" rel="noopener noreferrer" onclick="updateClickStat('scoplanVENTE')"><i class="fa fa-external-link-alt fa-xs"></i></a>
                         </div>
                     </div>
                 </div>
@@ -511,7 +511,7 @@
                         </div>
                         <div class="portfolio-text">
                             <h3>ALISOA</h3>
-                            <a class="btn" href="https://www.youtube.com/watch?v=NS-ykFg7I0k" target="_blank" rel="noopener noreferrer"><i class="fa fa-external-link-alt fa-xs"></i></a>
+                            <a class="btn" href="https://www.youtube.com/watch?v=NS-ykFg7I0k" target="_blank" rel="noopener noreferrer" onclick="updateClickStat('alisoa')"><i class="fa fa-external-link-alt fa-xs"></i></a>
                         </div>
                     </div>
                 </div>
@@ -522,7 +522,7 @@
                         </div>
                         <div class="portfolio-text">
                             <h3>Avia ry mino - Magic Voice</h3>
-                            <a class="btn" href="https://www.youtube.com/watch?v=gbAL5dTa4Qo" target="_blank" rel="noopener noreferrer"><i class="fa fa-external-link-alt fa-xs"></i></a>
+                            <a class="btn" href="https://www.youtube.com/watch?v=gbAL5dTa4Qo" target="_blank" rel="noopener noreferrer" onclick="updateClickStat('aviaRyMino')"><i class="fa fa-external-link-alt fa-xs"></i></a>
                         </div>
                     </div>
                 </div>
@@ -558,11 +558,11 @@
                                 <div class="contact-info">
                                     <h4 eo-translator="contact.title2">Find me</h4>
                                     <ul class="contact-address">
-                                        <li><i class="fa fa-map-marker fa-lg"></i><a style="color: white;" href="https://goo.gl/maps/MvTTe16AFj93LNbA9" target="_blank" rel="noopener noreferrer">Près II H 122,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Soavimasoandro ,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Antananrivo 101, Madagascar</a></li>
-                                        <li><i class="fa fa-phone"></i><a style="color: white;" href="https://wa.me/261342838122" target="_blank" rel="noopener noreferrer">+261 34 28 381 22</a></li>
-                                        <li><i class="fa fa-envelope"></i><a style="color: white;" href="#contact">r.mmihary@gmail.com</a></li>
-                                        <li><i class="fab fa-skype"></i> <a style="color: white;" href="https://join.skype.com/invite/GRabaELcG1zL" target="_blank" rel="noopener noreferrer">live:r.mmihary</a></li>
-                                        <li><i class="fab fa-linkedin-in"></i> <a style="color: white;" href="https://www.linkedin.com/in/rilah-mario/" target="_blank" rel="noopener noreferrer">rilah-mario</a></li>
+                                        <li><i class="fa fa-map-marker fa-lg"></i><a style="color: white;" href="https://goo.gl/maps/MvTTe16AFj93LNbA9" target="_blank" rel="noopener noreferrer" onclick="updateClickStat('googleMap')">Près II H 122,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Soavimasoandro ,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Antananrivo 101, Madagascar</a></li>
+                                        <li><i class="fa fa-phone"></i><a style="color: white;" href="https://wa.me/261342838122" target="_blank" rel="noopener noreferrer" onclick="updateClickStat('whatsapp')">+261 34 28 381 22</a></li>
+                                        <li><i class="fa fa-envelope"></i><a style="color: white;" href="#contact" onclick="updateClickStat('email')">contact@rilah-mario.com</a></li>
+                                        <li><i class="fab fa-skype"></i> <a style="color: white;" href="https://join.skype.com/invite/GRabaELcG1zL" target="_blank" rel="noopener noreferrer" onclick="updateClickStat('skype')">live:r.mmihary</a></li>
+                                        <li><i class="fab fa-linkedin-in"></i> <a style="color: white;" href="https://www.linkedin.com/in/rilah-mario/" target="_blank" rel="noopener noreferrer" onclick="updateClickStat('linkedin')">rilah-mario</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -613,7 +613,7 @@
                         <div class="blog-text">
                             <h2 eo-translator="blog.title1">Event planner</h2>
                             <div class="blog-meta">
-                                <p><i class="far fa-user"></i><a style="color: #797979;" href="https://www.facebook.com/miharteventofficiel" target="_blank" rel="noopener noreferrer">Mi'hart Event</a></p>
+                                <p><i class="far fa-user"></i><a style="color: #797979;" href="https://www.facebook.com/miharteventofficiel" target="_blank" rel="noopener noreferrer" onclick="updateClickStat('event')">Mi'hart Event</a></p>
                                 <p><i class="far fa-list-alt"></i>Event Planer</p>
                                 <p><i class="far fa-calendar-alt"></i>Jan 2021</p>
                                 <p><i class="far fa-comments"></i>5</p>
@@ -621,7 +621,7 @@
                             <p eo-translator="blog.item1_content">
                                 Almost every Saturday, I spend my time organizing events such as weddings or birthdays. Don't hesitate to contact me if you want to immortalize your biggest day. We have multitudes of services to make it unforgettable as Event Band, Sound, Lights, Special Effects, etc...
                             </p>
-                            <a class="btn" href="https://www.facebook.com/miharteventofficiel" target="_blank" rel="noopener noreferrer" eo-translator="blog.btn">Follow my page <i class="fa fa-angle-right"></i></a>
+                            <a class="btn" href="https://www.facebook.com/miharteventofficiel" target="_blank" rel="noopener noreferrer" eo-translator="blog.btn" onclick="updateClickStat('event')">Follow my page <i class="fa fa-angle-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -633,15 +633,15 @@
                         <div class="blog-text">
                             <h2 eo-translator="blog.title2"> Guitarist</h2>
                             <div class="blog-meta">
-                                <p><i class="far fa-user"></i> <a style="color: #797979;" href="https://www.facebook.com/rilahmariomihariniaina" target="_blank" rel="noopener noreferrer">Rilah Mario</a></p>
+                                <p><i class="far fa-user"></i> <a style="color: #797979;" href="https://www.facebook.com/rilahmariomihariniaina" target="_blank" rel="noopener noreferrer" onclick="updateClickStat('facebookPage')">Rilah Mario</a></p>
                                 <p><i class="far fa-list-alt"></i>Live</p>
                                 <p><i class="far fa-calendar-alt"></i>Jun 2019</p>
-                                <p><i class="far fa-comments"></i>10</p>
+                                <p><i class="far fa-comments"></i> <span id="result">10</span></p>
                             </div>
                             <p eo-translator="blog.item2_content">
                                 I am a Malagasy musician, I studied guitar and I spend almost all my free time playing, writing and composing. I am open to all kind of music, I like to listen to alternative rock and indie music because it calms my soul a lot. I really appreciate the creation of Malagasy artists like Imiangaly and John Oabmar.
                             </p>
-                            <a class="btn" href="https://www.facebook.com/rilahmariomihariniaina" target="_blank" rel="noopener noreferrer" eo-translator="blog.btn">Follow my page <i class="fa fa-angle-right"></i></a>
+                            <a class="btn" href="https://www.facebook.com/rilahmariomihariniaina" target="_blank" rel="noopener noreferrer" eo-translator="blog.btn" onclick="updateClickStat('facebookPage')">Follow my page <i class="fa fa-angle-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -656,12 +656,12 @@
         <div class="container copyright" >
             <div class="footer-info">
                 <div class="footer-social">
-                    <a href="https://twitter.com/r_mmihary"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.facebook.com/rilahmariomihariniaina"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://www.youtube.com/@rilahmariomihariniaina9155/videos"><i class="fab fa-youtube"></i></a>
-                    <a href="https://www.instagram.com/rilahmariomihariniaina/"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/rilah-mario/"><i class="fab fa-linkedin-in"></i></a>
-                    <a style="color: #797979;" href="https://join.skype.com/invite/GRabaELcG1zL" target="_blank" rel="noopener noreferrer"><i class="fab fa-skype"></i> </a>
+                    <a href="https://twitter.com/r_mmihary" target="_blank" rel="noopener noreferrer"  onclick="updateClickStat('twiter')"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/rilahmariomihariniaina" target="_blank" rel="noopener noreferrer"  onclick="updateClickStat('facebookPage')"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.youtube.com/@rilahmariomihariniaina9155/videos" target="_blank" rel="noopener noreferrer"  onclick="updateClickStat('youtube')"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/rilahmariomihariniaina/" target="_blank" rel="noopener noreferrer"  onclick="updateClickStat('instagram')"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/rilah-mario/" target="_blank" rel="noopener noreferrer"  onclick="updateClickStat('linkedin')"><i class="fab fa-linkedin-in"></i></a>
+                    <a style="color: #797979;" href="https://join.skype.com/invite/GRabaELcG1zL" target="_blank" rel="noopener noreferrer" onclick="updateClickStat('skype')"><i class="fab fa-skype"></i> </a>
                 </div>
             </div>
             <p style="display: inline; font-size: small;">
@@ -707,7 +707,7 @@
     <!-- Sending email -->
     <script src="js/smtp.min.js"></script>
     <!-- Template Javascript -->
-    <script src="js/main.min.js"></script>
+    <script src="js/main.js"></script>
     
     <!-- Translate JS. -->
     <script src="./js/translator.min.js"></script>
