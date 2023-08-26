@@ -72,7 +72,7 @@ window.addEventListener('load', () => {
         'diplaume3_desc': 'CFP Image E-MEDIA, Antananarivo',
         'diplaume4': 'Master degree - Mobiquity, Big Data and System Integration',
         'diplaume4_desc': 'Université de Nice, Sophia Antipolis',
-        'work1': 'Web engeneer - Telma media planning',
+        'work1': 'Web engineer - Telma media planning',
         'work1_sub': 'PULSE, Antananarivo, Madagascar \nSymphony, Codeigniter, Mysql',
         'work1_desc': 'This project is based on the necessary management of the launching of an advertisement in the existing media in Madagascar. The objective of the project is to computerize the monitoring system of the evolution of an advertisement that the company propagates. \n\n- Development and maintenance of internal software \n- Realization and development of functional requirements \n- Proposal of digital solutions',
         'work2': 'MEAN Stack developer',
@@ -94,7 +94,7 @@ window.addEventListener('load', () => {
         'desc2': 'After University, I mastered various web technology like php, javascript, symfony, codeigniter, angular, nodesJS, java, etc... which allows me to become fullstack.',
         'content3': 'Apps Development',
         'desc3': 'We learned mobile technologies like java, ionic, swift and objectiveC like android studio environment and XCode. What I currently apply in a company.',
-        'content4': 'Data engeneer',
+        'content4': 'Data engineer',
         'desc4': 'During my training, we studied databases like mysql, postgres, oracle, sqlite, mongoDB... That we have applied in many project as well as in my internship.',
       },
       'quotes': {
@@ -344,7 +344,7 @@ window.addEventListener('load', () => {
         'desc2': 'Mahafehy tekinolojia maromaro, toy ny: php, javascript, symfony, codeigniter, angular, nodeJS, java, sns... Izay mahatonga ahy ho "Fullstack developer".',
         'content3': 'Apps Development',
         'desc3': 'Nianatra manokana ny tekinolojia amin\'ny finday ihany koa, toy ny: Java, Ionic, Swift ary ObjectiveC izay mbola ampiasaiko amin\'izao fotoana izao anatin\'ny asako.',
-        'content4': 'Data engeneer',
+        'content4': 'Data engineer',
         'desc4': 'Nandalina momba ny banky angona aho, ka nahaizako nifehy: mysql, postgres, oracle, sqlite, mongodb,... izay samy efa nampiasaiko tamin\'ny asako teo aloha.',
       },
       'quotes': {

@@ -1,5 +1,5 @@
-var serverhost= "http://localhost:3000/";
-// var serverhost= "https://api.rilah-mario.com/";
+// var serverhost= "http://localhost:3000/";
+var serverhost= "https://api.rilah-mario.com/";
 
 (function ($) {
   "use strict";
