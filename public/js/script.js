@@ -39,7 +39,7 @@ window.addEventListener('load', () => {
       },
       'about': {
         'subtitle': 'Learn about me',
-        'title': 'Fullstack developer',
+        'title': 'Fullstack Developer',
         'desc': 'I am MIHARINIAINA Rilah Mario, passionate about computer science since the age of 14. After graduating with a Master II in "Mobiquity, Big data and Systems Integration" at the University of Nice Sofia Antipolis, I am currently looking for a position to apply my knowledge and increase my sklills in the field of computer science.',
         'information': 'Informations',
         'born': 'Born on 3rd March 1998',
@@ -138,7 +138,7 @@ window.addEventListener('load', () => {
         'title1': 'Event Planner',
         'item1_content': 'Almost every Saturday, I spend my time organizing events such as weddings or birthdays. Don\'t hesitate to contact me if you want to immortalize your biggest day. We have multitudes of services to make it unforgettable as Event Band, Sound, Lights, Special Effects, etc...',
         'title2': 'Guitarist',
-        'item2_content': 'I am a Malagasy musician, I studied guitar and I spend almost all my free time playing, writing and composing. I am open to all kind of music, I like to listen to alternative rock and indie music because it calms my soul a lot. I really appreciate the creation of Malagasy artists like Imiangaly and John Oabmar.',
+        'item2_content': 'I am a Malagasy musician, I studied guitar and I spend almost all my free time playing, writing and composing. I am open to all kind of music, I like to listen to alternative rock and indie music because it calms my soul a lot. I really appreciate the creation of Malagasy artists like Imiangaly and John Oabmar ...',
         'btn': 'Follow my page'
       },
       'footer': {
@@ -168,7 +168,7 @@ window.addEventListener('load', () => {
       },
       'about': {
         'subtitle': 'En savoir plus sur moi',
-        'title': 'Développeur fullstack',
+        'title': 'Développeur Fullstack',
         'desc': 'Je suis MIHARINIAINA Rilah Mario, passionnée de l\'informatique depuis l\'âge de 14 ans. Après avoir eu mon diplôme de Master II à l\'université de Nice Sofia Antipolis, je cherche actuellement un poste pour appliquer mes savoir-faire et augmenter ma compétence sur le domaine de l\'informatique.',
         'information': 'Informations',
         'born': 'Née le 3 Mars 1998',
@@ -220,7 +220,7 @@ window.addEventListener('load', () => {
       },
       'service': {
         'subtitle': 'Ce que je fais',
-        'title': 'Services de qualité',
+        'title': 'Services De Qualité',
         'content1': 'Conception',
         'desc1': 'Créatif et stratégique, je peux créer des maquettes, affiche, logo, etc... En utilisant des outils comme figma, photoshop, indesign, illustrator, etc...',
         'content2': 'Développement web',
@@ -263,11 +263,11 @@ window.addEventListener('load', () => {
       },
       'blog': {
         'title': 'à part',
-        'subtitle': 'Autre préstation',
+        'subtitle': 'Autre Prestation',
         'title1': 'Organisateur d\'évènement',
         'item1_content': 'Presque tous les samedi, je passes mon temps à l’organisation des événements  comme le mariage ou anniversaire. N\'hésitez pas à me contacter si vous voulez immortaliser votre plus grand jour. Nous avons des multitudes de prestation pour le rendre inoubliable comme Orchestre événementiel, Sonorisation, Lumières, Effets Spéciaux, etc...',
         'title2': 'Guitarist',
-        'item2_content': 'Je suis un musicien malgache, j\'ai étudié la guitare et je passe presque tout mon temps libre à jouer, écrire et composer. Je suis ouvert à tout type de musique, j\'aime écouter du rock alternatif et de la musique indie car cela me calme beaucoup l\'esprit. J\'apprécie beaucoup la création d\'artistes malgaches comme Imiangaly et John Oabmar.',
+        'item2_content': 'Je suis un musicien malgache, j\'ai étudié la guitare et je passe presque tout mon temps libre à jouer, écrire et composer. Je suis ouvert à tout type de musique, j\'aime écouter du rock alternatif et de la musique indie car cela me calme beaucoup l\'esprit. J\'apprécie beaucoup la création d\'artistes malgaches comme Imiangaly et John Oabmar ...',
         'btn': 'Suivre ma page'
       },
       'footer': {
@@ -297,7 +297,7 @@ window.addEventListener('load', () => {
       },
       'about': {
         'subtitle': 'Mombamomba ahy',
-        'title': 'Fullstack developer',
+        'title': 'Fullstack Developer',
         'desc': 'MIHARINIAINA Rilah Mario no anarako, liana amin\'ny tontolon\'ny solosaina sy ny tekinolojia hatramin\'ny faha-14 taonako. Taorian\'ny nahazoako ny mari-pahaizana "Maîtrise II en Mobiquity, Big Data and Systems Integration" tao amin\'ny Oniversiten\'i Nice Sofia Antipolis, dia mitady asa hampiharana ny fahalalako aho ary hampitombo ny traikefako amin\'ny sehatry ny IT. ',
         'information': 'Informations',
         'born': 'Teraka ny 3 Martsa 1998',
@@ -321,7 +321,7 @@ window.addEventListener('load', () => {
       'study_work': {
         'subtitle': 'Ny lalana nodiaviko',
         'title1': 'Diplaoma & Fianarana',
-        'title2': 'Traikefa ankasa',
+        'title2': 'Traikefa Ankasa',
         'diplaume1': 'Bakalorea - Sokajy C',
         'diplaume1_desc': 'LEG Imerintsiatosika',
         'diplaume2': 'Licence en développement web et design',
@@ -349,7 +349,7 @@ window.addEventListener('load', () => {
       },
       'service': {
         'subtitle': 'Tolotra afaka omeko',
-        'title': 'Tolotra sy Kalitao miavaka',
+        'title': 'Tolotra & Kalitao',
         'content1': 'Design',
         'desc1': 'Afaka manao modely ho an\'ny peta-drindrina, sary famantarana, fanasana sns aho miaraka amin\'ny aingam-panahy ananako sy ny fahaizako mifehy ny: figma, photoshop, indesign, illustrator, sns...',
         'content2': 'Web Development',
@@ -371,8 +371,8 @@ window.addEventListener('load', () => {
       },
       'portfolio': {
         'subtitle': 'MY PORTFOLIO',
-        'title': 'My Excellent Portfolio',
-        'all': 'all',
+        'title': 'Ireo Zava-bitako',
+        'all': 'Manontolo',
         'tab1': 'Web Apps',
         'tab2': 'Mobile Apps',
         'tab3': 'Design',
@@ -392,11 +392,11 @@ window.addEventListener('load', () => {
       },
       'blog': {
         'title': 'Hafa',
-        'subtitle': 'Ireo asako hafa',
+        'subtitle': 'Ireo Asako Hafa',
         'title1': 'Mpikarakara lanonana',
         'item1_content': 'Ankoatra ny maha "Développeur" ahy dia mikarakara lanonana toy ny mariazy na aniversaire no ataoko matetika isaky ny faran\'ny erin\'andro. Maro ny tolotra afaka omenay toy ny Orchestre, Sonorisation, Lumières, Effets spéciaux, sns... Aza misalasala manantona fa vonona ny hampiavaka ny fetinao izahay.',
-        'title2': 'Mpitendry guitara malagasy',
-        'item2_content': 'Mpiangaly mozika malagasy aho, nandalina manokana ny guitare. Isaky ny manana fotoana malalaka aho dia mandalina, manoratra sy mandrindra. Mivelatra amin\'ny mozija rehetra, tia mihaino ny gadona "alternative-rock" sy "Indie-music" noho izy mahatony tanteraka ny fanahiko. Tena tiako ihany koa ny mozikan\'ny mpanakanto malagasy toa an\'i Imiangaly, John Oabmar.',
+        'title2': 'Mpitendy',
+        'item2_content': 'Mpiangaly mozika malagasy aho, nandalina manokana ny guitare. Isaky ny manana fotoana malalaka aho dia mandalina, manoratra sy mandrindra. Mivelatra amin\'ny mozija rehetra, tia mihaino ny gadona "alternative-rock" sy "Indie-music" noho izy mahatony tanteraka ny fanahiko. Tena tiako ihany koa ny mozikan\'ny mpanakanto malagasy toa an\'i Imiangaly, John Oabmar ...',
         'btn': 'Hanaraka ny pejiko'
       },
       'footer': {
