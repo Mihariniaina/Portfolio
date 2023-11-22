@@ -137,7 +137,7 @@ window.addEventListener('load', () => {
         'subtitle': 'My Other Prestation',
         'title1': 'Event Planner',
         'item1_content': 'Almost every Saturday, I spend my time organizing events such as weddings or birthdays. Don\'t hesitate to contact me if you want to immortalize your biggest day. We have multitudes of services to make it unforgettable as Event Band, Sound, Lights, Special Effects, etc...',
-        'title2': 'Guitarist',
+        'title2': 'Musician',
         'item2_content': 'I am a Malagasy musician, I studied guitar and I spend almost all my free time playing, writing and composing. I am open to all kind of music, I like to listen to alternative rock and indie music because it calms my soul a lot. I really appreciate the creation of Malagasy artists like Imiangaly and John Oabmar ...',
         'btn': 'Follow my page'
       },
@@ -266,7 +266,7 @@ window.addEventListener('load', () => {
         'subtitle': 'Autre Prestation',
         'title1': 'Organisateur d\'évènement',
         'item1_content': 'Presque tous les samedi, je passes mon temps à l’organisation des événements  comme le mariage ou anniversaire. N\'hésitez pas à me contacter si vous voulez immortaliser votre plus grand jour. Nous avons des multitudes de prestation pour le rendre inoubliable comme Orchestre événementiel, Sonorisation, Lumières, Effets Spéciaux, etc...',
-        'title2': 'Guitarist',
+        'title2': 'Musicien',
         'item2_content': 'Je suis un musicien malgache, j\'ai étudié la guitare et je passe presque tout mon temps libre à jouer, écrire et composer. Je suis ouvert à tout type de musique, j\'aime écouter du rock alternatif et de la musique indie car cela me calme beaucoup l\'esprit. J\'apprécie beaucoup la création d\'artistes malgaches comme Imiangaly et John Oabmar ...',
         'btn': 'Suivre ma page'
       },
@@ -395,7 +395,7 @@ window.addEventListener('load', () => {
         'subtitle': 'Ireo Asako Hafa',
         'title1': 'Mpikarakara lanonana',
         'item1_content': 'Ankoatra ny maha "Développeur" ahy dia mikarakara lanonana toy ny mariazy na aniversaire no ataoko matetika isaky ny faran\'ny erin\'andro. Maro ny tolotra afaka omenay toy ny Orchestre, Sonorisation, Lumières, Effets spéciaux, sns... Aza misalasala manantona fa vonona ny hampiavaka ny fetinao izahay.',
-        'title2': 'Mpitendy',
+        'title2': 'Mpitendry',
         'item2_content': 'Mpiangaly mozika malagasy aho, nandalina manokana ny guitare. Isaky ny manana fotoana malalaka aho dia mandalina, manoratra sy mandrindra. Mivelatra amin\'ny mozika rehetra, tia mihaino ny gadona "alternative-rock" sy "Indie-music" noho izy mahatony tanteraka ny fanahiko. Tena tiako ihany koa ny mozikan\'ny mpanakanto malagasy toa an\'i Imiangaly, John Oabmar ...',
         'btn': 'Hanaraka ny pejiko'
       },
