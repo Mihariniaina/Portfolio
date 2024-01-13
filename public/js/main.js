@@ -5,6 +5,64 @@ var serverhost= "https://api.rilah-mario.com/";
   "use strict";
   updateClickStat("pageReload");
 
+  $(document).ready(function() {
+    // Vérifier si le paramètre "" est présent dans l'URL
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.has('semwee')) {
+      // Ouvrir le modal lorsque le paramètre est présent
+      $('#scoplan_ct').modal('show');
+    }
+    if (urlParams.has('facet_checker')) {
+      // Ouvrir le modal lorsque le paramètre est présent
+      $('#scoplan_ct').modal('show');
+    }
+    if (urlParams.has('scoplan')) {
+      // Ouvrir le modal lorsque le paramètre est présent
+      $('#scoplan').modal('show');
+    }
+    if (urlParams.has('scoplan_ct')) {
+      // Ouvrir le modal lorsque le paramètre est présent
+      $('#scoplan_ct').modal('show');
+    }
+    if (urlParams.has('scoplan_part')) {
+      // Ouvrir le modal lorsque le paramètre est présent
+      $('#scoplan_part').modal('show');
+    }
+    if (urlParams.has('scoplan_terran')) {
+      // Ouvrir le modal lorsque le paramètre est présent
+      $('#scoplan_terran').modal('show');
+    }
+    if (urlParams.has('scoplan_vefa')) {
+      // Ouvrir le modal lorsque le paramètre est présent
+      $('#scoplan_vefa').modal('show');
+    }
+    if (urlParams.has('scoplan_arti')) {
+      // Ouvrir le modal lorsque le paramètre est présent
+      $('#scoplan_arti').modal('show');
+    }
+    if (urlParams.has('scoplan_vente')) {
+      // Ouvrir le modal lorsque le paramètre est présent
+      $('#scoplan_vente').modal('show');
+    }
+    if (urlParams.has('alisoa')) {
+      // Ouvrir le modal lorsque le paramètre est présent
+      $('#alisoa').modal('show');
+    }
+    if (urlParams.has('avia_ry_mino')) {
+      // Ouvrir le modal lorsque le paramètre est présent
+      $('#avia_ry_mino').modal('show');
+    }
+    if (urlParams.has('andro_malaza')) {
+      // Ouvrir le modal lorsque le paramètre est présent
+      $('#andro_malaza').modal('show');
+    }
+    if (urlParams.has('feo_ny_lakilosy')) {
+      // Ouvrir le modal lorsque le paramètre est présent
+      $('#feo_ny_lakilosy').modal('show');
+    }
+  });
+
+
   //get page visit number
   $.ajax({
     url: serverhost+"getLineCount",

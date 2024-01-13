@@ -881,12 +881,13 @@ border-color: transparent #dddddd transparent transparent;
   width: 100%; 
   height: 100%; 
   object-fit: cover;
-  transform: scale(1.1);
+  /* transform: scale(1.1); */
   transition: .5s;
 }
 
 .portfolio .portfolio-item:hover img {
-  margin-left: 15px;
+  /* margin-left: 10px; */
+  transform: scale(1.05);
 }
 
 .portfolio .portfolio-text {
@@ -902,7 +903,7 @@ border-color: transparent #dddddd transparent transparent;
 
 .portfolio .portfolio-text h3 {
   width: calc(100% - 70px);
-  font-size: 18px;
+  font-size: 12px;
   font-weight: 600;
   margin: 0 0 0 15px;
   white-space: nowrap;
@@ -1762,6 +1763,7 @@ select::-ms-expand {
   margin: auto;
 }
 
+
 #error.show {
   -webkit-transition: opacity .6s ease-out, visibility 0s linear 0s;
   -o-transition: opacity .6s ease-out, visibility 0s linear 0s;
@@ -1777,4 +1779,38 @@ select::-ms-expand {
 
 i.fa.fa-external-link-alt.fa-xs{
   font-size: 0.5em;
+}
+
+.modal-content{
+  box-shadow: 0px 0px 20px 2px #000000;
+  font-size: x-small  ;
+}
+
+.flex-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.plateform-logo{
+  height: 55px;
+}
+
+.modal-body .row{
+  padding: 5px;
+  border-top: solid 1px #94949424;
+}
+
+.portfolio-text .btn {
+  color: white;
+}
+
+.modal-head{
+  background-size: cover;
+  padding-bottom: 67%; 
+}
+
+.modal.fade{
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(6px);
 }

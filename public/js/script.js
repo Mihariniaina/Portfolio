@@ -143,6 +143,10 @@ window.addEventListener('load', () => {
       },
       'footer': {
         'right': 'All Right Reserved | 2023',
+      },
+      'btn': {
+        'download': 'Download',
+        'listen': 'Listen'
       }
     },
     'fr': {
@@ -272,6 +276,10 @@ window.addEventListener('load', () => {
       },
       'footer': {
         'right': 'Tous droits réservés | 2023',
+      },
+      'btn': {
+        'download': 'Télécharger',
+        'listen': 'Écouter'
       }
     },
     'mg': {
@@ -401,6 +409,10 @@ window.addEventListener('load', () => {
       },
       'footer': {
         'right': 'Copyright | 2023',
+      },
+      'btn': {
+        'download': 'Haka',
+        'listen': 'Hiaino'
       }
     }
   };
