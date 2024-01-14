@@ -7,7 +7,6 @@ var serverhost= "https://api.rilah-mario.com/";
 
   // Add an event listener to each menu item
   $('.navbar-nav a').on('click', function(){
-    console.log("aaa0");
     // Close the navbarCollapse
     $('#navbarCollapse').collapse('hide');      
   });
