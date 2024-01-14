@@ -1799,6 +1799,7 @@ i.fa.fa-external-link-alt.fa-xs{
 .modal-body .row{
   padding: 5px;
   border-top: solid 1px #94949424;
+  padding-inline-end: 30px;
 }
 
 .portfolio-text .btn {
@@ -1813,4 +1814,8 @@ i.fa.fa-external-link-alt.fa-xs{
 .modal.fade{
   background-color: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(6px);
+}
+
+.modal-content .modal-body{
+  padding: 0rem 1rem 1rem 1rem !important;
 }

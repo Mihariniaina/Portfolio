@@ -5,6 +5,13 @@ var serverhost= "https://api.rilah-mario.com/";
   "use strict";
   updateClickStat("pageReload");
 
+  // Add an event listener to each menu item
+  $('.navbar-nav a').on('click', function(){
+    console.log("aaa0");
+    // Close the navbarCollapse
+    $('#navbarCollapse').collapse('hide');      
+  });
+
   $(document).ready(function() {
     // Vérifier si le paramètre "" est présent dans l'URL
     const urlParams = new URLSearchParams(window.location.search);
@@ -188,6 +195,10 @@ var serverhost= "https://api.rilah-mario.com/";
   });
   
 })(jQuery);
+
+function openLink(lien) {
+  window.open(lien, "_blank");
+}
 
 function sendMail(){
     var senderName = document.getElementById('senderName').value;
