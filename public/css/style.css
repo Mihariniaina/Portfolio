@@ -1814,6 +1814,8 @@ i.fa.fa-external-link-alt.fa-xs{
 .modal.fade{
   background-color: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(6px);
+  padding-right: 10px !important;
+  padding-left: 10px !important;
 }
 
 .modal-content .modal-body{
