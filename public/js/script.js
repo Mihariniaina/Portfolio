@@ -146,7 +146,8 @@ window.addEventListener('load', () => {
       },
       'btn': {
         'download': 'Download',
-        'listen': 'Listen'
+        'listen': 'Listen',
+        'soon': 'Soon...'
       }
     },
     'fr': {
@@ -279,7 +280,8 @@ window.addEventListener('load', () => {
       },
       'btn': {
         'download': 'Télécharger',
-        'listen': 'Écouter'
+        'listen': 'Écouter',
+        'soon': 'Bientôt...'
       }
     },
     'mg': {
@@ -412,7 +414,8 @@ window.addEventListener('load', () => {
       },
       'btn': {
         'download': 'Haka',
-        'listen': 'Hiaino'
+        'listen': 'Hiaino',
+        'soon': 'Tsy ho ela...'
       }
     }
   };
