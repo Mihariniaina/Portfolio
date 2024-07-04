@@ -1821,3 +1821,9 @@ i.fa.fa-external-link-alt.fa-xs{
 .modal-content .modal-body{
   padding: 0rem 1rem 1rem 1rem !important;
 }
+
+.info-logo {
+  float: left;
+  margin-right: 10px;
+  width: 18px;
+}
