@@ -425,6 +425,7 @@ window.addEventListener('load', () => {
 
   // Getting the DOM elements
   var globalTranslate = document.getElementById('globalTranslate');
+  var cvForm = document.getElementById('cvForm');
 
   // Setting the default language
   var pathURL = window.location.pathname;
@@ -437,7 +438,24 @@ window.addEventListener('load', () => {
     globalTranslate.value = document.documentElement.lang || 'en';
   }
   
-
+  // Update the CV download link based on the language
+  function updateCVLink() {
+    var cvPath = '/CV-RilahMarioMIHARINIAINA-';
+    switch (globalTranslate.value) {
+      case 'mg':
+        cvPath += 'FR';
+        break;
+      case 'fr':
+        cvPath += 'FR';
+        break;
+      case 'en':
+      default:
+        cvPath += 'EN';
+        break;
+    }
+    cvPath += '-2025.pdf';
+    cvForm.action = cvPath;
+  }
 
   // Translating the greeting input when the greet button is clicked
   globalTranslate.addEventListener('change', function () {
@@ -445,6 +463,7 @@ window.addEventListener('load', () => {
 
     try {
       translator.translateDOM(document.body, language);
+      updateCVLink();
     } catch (e) {
       alert(e);
     }
