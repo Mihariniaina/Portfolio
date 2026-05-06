@@ -142,7 +142,7 @@ window.addEventListener('load', () => {
         'btn': 'Follow my page'
       },
       'footer': {
-        'right': 'All Right Reserved | 2024',
+        'right': 'All Right Reserved | 2026',
       },
       'btn': {
         'download': 'Download',
@@ -276,7 +276,7 @@ window.addEventListener('load', () => {
         'btn': 'Suivre ma page'
       },
       'footer': {
-        'right': 'Tous droits réservés | 2024',
+        'right': 'Tous droits réservés | 2026',
       },
       'btn': {
         'download': 'Télécharger',
@@ -410,7 +410,7 @@ window.addEventListener('load', () => {
         'btn': 'Hanaraka ny pejiko'
       },
       'footer': {
-        'right': 'Copyright | 2024',
+        'right': 'Copyright | 2026',
       },
       'btn': {
         'download': 'Haka',
