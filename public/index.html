@@ -21,7 +21,7 @@
         <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
     
         <!-- Template Stylesheet -->
-        <link href="css/style.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
     </head>
     
     <body id="page-top" data-spy="scroll" data-target=".navbar" data-offset="51">
@@ -71,7 +71,7 @@
                             </p>
                             <h1>Rilah Mario MIHARINIAINA</h1>
                             <h2></h2>
-                            <div class="typed-text" eo-translator="home.sub">Web developer, Apps developer, Film director, Music arranger</div>
+                            <div class="typed-text" eo-translator="home.sub"></div>
                         </div>
                         <div class="hero-btn">
                             <a class="btn" href="#contact" eo-translator="home.hire" onclick="updateClickStat('hire')"></a>
@@ -113,13 +113,11 @@
                                 <div class="col-md-6">
                                         <p class="title" eo-translator="about.information">Informations</p>
                                         <ul class="contact-address">
-                                            <li><i class="fa fa-calendar"></i> <p eo-translator="about.born"> </p></li>
                                             <li><i class="fa fa-flag"></i> <p eo-translator="about.malagasy"> </p> </li>
                                             <li><img class="info-logo" src="img/ring.png" alt="Image"> <p eo-translator="about.single"> </p> </li>
-                                            <li><i class="fa fa-car"></i> <p eo-translator="about.driving"> </p> </li>
                                             <li><i class="fa fa-map-marker fa-lg"></i> <a style="color: #797979;" href="https://maps.app.goo.gl/Jtiji6DqL4fhV19k6" target="_blank" rel="noopener noreferrer" onclick="updateClickStat('googleMap')">Ottawa ON, Canada</a></li>
-                                            <li><i class="fa fa-phone"></i><a style="color: #797979;" href="https://wa.me/261342838122" target="_blank" rel="noopener noreferrer" onclick="updateClickStat('whatsapp')">+261 34 28 381 22</a></li>
-                                            <li><i class="fa fa-envelope"></i> <a style="color: #797979;" href="#contact" onclick="updateClickStat('email')">mihariniaina@rilah-mario.com</a></li>
+                                            <li><i class="fa fa-phone"></i><a style="color: #797979;" href="tel:+13439989468" target="_blank" rel="noopener noreferrer" onclick="updateClickStat('whatsapp')">+1 (343) 998-9468</a></li>
+                                            <li><i class="fa fa-envelope"></i> <a style="color: #797979;" href="mailto:mihariniaina@rilah-mario.com" onclick="updateClickStat('email')">mihariniaina@rilah-mario.com</a></li>
                                             <li><i class="fab fa-skype"></i> <a style="color: #797979;" href="https://join.skype.com/invite/GRabaELcG1zL" target="_blank" rel="noopener noreferrer" onclick="updateClickStat('skype')">live:r.mmihary</a></li>
                                             <li><i class="fab fa-linkedin-in"></i> <a style="color: #797979;" href="https://www.linkedin.com/in/rilah-mario/" target="_blank" rel="noopener noreferrer" onclick="updateClickStat('linkedin')">rilah-mario</a></li>
                                         </ul>
@@ -138,9 +136,6 @@
                                         </div>
                                         <div class="progress">
                                             <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div><br>
-                                        <div class="skill-name">
-                                            <p eo-translator="about.mother_tongue">Malagasy :  Mother tongue</p> <p></p>
                                         </div><br><br>
                                         <p class="title" eo-translator="about.strengths">Strengths</p>
                                         <p eo-translator="about.Punctual"> Punctual</p><p eo-translator="about.ease"> Ease of learning process </p><p eo-translator="about.creative">Creative </p><br>
@@ -171,7 +166,8 @@
                     <div class="timeline-text">
                         <div class="timeline-date" eo-translator="study_work.work4_date">Since November 2021</div>
                         <h2 class="need-newline" eo-translator="study_work.work4">Fulstack developer</h2>
-                        <h4 class="need-newline" eo-translator="study_work.work4_sub">SCOPLAN, France, Télétravail</br> IONIC, JAVA, Objective-C, Symfony, Mysql</h4>
+                        <h4 class="need-newline" eo-translator="study_work.work4_sub1">Adrware Consulting, Madagascar, Hybride</h4>
+                        <h4 class="need-newline reduced-margin-top" eo-translator="study_work.work4_sub2">SCOPLAN, France, Télétravail</br> IONIC, JAVA, Objective-C, Symfony, Mysql</h4>
                         <p class="need-newline" eo-translator="study_work.work4_desc">
                             - Development and maintenance of android, ios and web application </br>
                             - Realization and development of functional requirements </br>
@@ -183,7 +179,8 @@
                     <div class="timeline-text">
                         <div class="timeline-date" eo-translator="study_work.work3_date">January 2021 - October 2021</div>
                         <h2 class="need-newline" eo-translator="study_work.work3">Scrum master / Product Manager</h2>
-                        <h4 class="need-newline" eo-translator="study_work.work3_sub">SEMWEE, France, Télétravail</h4>
+                        <h4 class="need-newline" eo-translator="study_work.work3_sub1">Adrware Consulting, Madagascar (On-site)</h4>
+                        <h4 class="need-newline reduced-margin-top" eo-translator="study_work.work3_sub2">SEMWEE, France, Télétravail</h4>
                         <p class="need-newline" eo-translator="study_work.work3_desc">
                             - Lead the project from conception to delivery</br>
                             - Make the design of the database</br>
@@ -200,7 +197,8 @@
                     <div class="timeline-text">
                         <div class="timeline-date" eo-translator="study_work.work2_date">December 2019 - December 2020</div>
                         <h2 class="need-newline" eo-translator="study_work.work2">MEAN Stack developer</h2>
-                        <h4 class="need-newline" eo-translator="study_work.work2_sub">ADRWARE, Antananarivo2, Madagascar</h4>
+                        <h4 class="need-newline" eo-translator="study_work.work2_sub1">ADRWARE, Antananarivo, Madagascar</h4>
+                        <h4 class="need-newline reduced-margin-top" eo-translator="study_work.work2_sub2">Telma Madagascar, Antananarivo, Madagascar</h4>
                         <p class="need-newline" eo-translator="study_work.work2_desc">
                             - Development and maintenance of internal software </br>
                             - Realization and development of functional requirements </br>
@@ -211,8 +209,9 @@
                 <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
                     <div class="timeline-text">
                         <div class="timeline-date" eo-translator="study_work.work1_date">June 2019 - August 2019</div>
-                        <h2 eo-translator="study_work.work1">Web engineer - Telma media planning</h2>
-                        <h4 class="need-newline" eo-translator="study_work.work1_sub">PULSE, Antananarivo, Madagascar</h4>
+                        <h2 eo-translator="study_work.work1">Web engineer - Telma media planning</h2>                        
+                        <h4 class="need-newline" eo-translator="study_work.work1_sub1">PULSE, Antananarivo, Madagascar</h4>
+                        <h4 class="need-newline reduced-margin-top" eo-translator="study_work.work1_sub2">Telma Madagascar, Antananarivo, Madagascar</h4>
                         <p class="need-newline" eo-translator="study_work.work1_desc">
                             - Development and maintenance of internal software </br>- Realization and development of functional requirements </br>- Proposal of digital solutions
                         </p>
@@ -227,8 +226,10 @@
                 <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
                     <div class="timeline-text">
                         <div class="timeline-date">2019 - 2021</div>
-                        <h2 eo-translator="study_work.diplaume4">Master degree - Mobiquity, Big data and Systems Integration</h2>
-                        <h4 eo-translator="study_work.diplaume4_desc">Nice University, Sophia Antipolis</h4>
+                        <h2 eo-translator="study_work.diplaume4">Master in Computer Methods Applied to Business Management (MIAGE)</h2>
+                        <h4 eo-translator="study_work.diplaume4_desc">Université Côte d’Azur, France</h4>
+                        <h4 eo-translator="study_work.diplaume4_spec"></h4>
+                        <h4 eo-translator="study_work.diplaume4_wes"></h4>
                     </div>
                 </div>
                 <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
@@ -591,8 +592,8 @@
                                     <h4 eo-translator="contact.title2">Find me</h4>
                                     <ul class="contact-address">
                                         <li><i class="fa fa-map-marker fa-lg"></i><a style="color: white;" href="https://maps.app.goo.gl/Jtiji6DqL4fhV19k6" target="_blank" rel="noopener noreferrer" onclick="updateClickStat('googleMap')">Ottawa ON, Canada</a></li>
-                                        <li><i class="fa fa-phone"></i><a style="color: white;" href="https://wa.me/261342838122" target="_blank" rel="noopener noreferrer" onclick="updateClickStat('whatsapp')">+261 34 28 381 22</a></li>
-                                        <li><i class="fa fa-envelope"></i><a style="color: white;" href="#contact" onclick="updateClickStat('email')">mihariniaina@rilah-mario.com</a></li>
+                                        <li><i class="fa fa-phone"></i><a style="color: white;" href="tel:+13439989468" target="_blank" rel="noopener noreferrer" onclick="updateClickStat('whatsapp')">+1 (343) 998-9468</a></li>
+                                        <li><i class="fa fa-envelope"></i><a style="color: white;" href="mailto:mihariniaina@rilah-mario.com" onclick="updateClickStat('email')">mihariniaina@rilah-mario.com</a></li>
                                         <li><i class="fab fa-skype"></i> <a style="color: white;" href="https://join.skype.com/invite/GRabaELcG1zL" target="_blank" rel="noopener noreferrer" onclick="updateClickStat('skype')">live:r.mmihary</a></li>
                                         <li><i class="fab fa-linkedin-in"></i> <a style="color: white;" href="https://www.linkedin.com/in/rilah-mario/" target="_blank" rel="noopener noreferrer" onclick="updateClickStat('linkedin')">rilah-mario</a></li>
                                     </ul>
@@ -1362,13 +1363,13 @@
     <!-- Sending email -->
     <script src="js/smtp.min.js"></script>
     <!-- Template Javascript -->
-    <script src="js/main.min.js"></script>
+    <script src="js/main.js"></script>
     
     <!-- Translate JS. -->
     <script src="./js/translator.min.js"></script>
     
     <!-- The main script. -->
-    <script src="./js/script.min.js"></script>
+    <script src="./js/script.js"></script>
     
     </body>
   </html>

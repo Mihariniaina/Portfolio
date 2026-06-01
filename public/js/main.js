@@ -147,19 +147,6 @@ var serverhost= "https://api.rilah-mario.com/";
   });
   
   
-  // Typed Initiate
-  if ($('.hero .hero-text h2').length === 1) {
-      var typed_strings = $('.hero .hero-text .typed-text').text();
-      var typed = new Typed('.hero .hero-text h2', {
-          strings: typed_strings.split(', '),
-          typeSpeed: 100,
-          backSpeed: 20,
-          smartBackspace: false,
-          loop: true
-      });
-  }
-  
-  
   // Skills
   $('.skills').waypoint(function () {
       $('.progress .progress-bar').each(function () {
@@ -181,18 +168,32 @@ var serverhost= "https://api.rilah-mario.com/";
       }
   });
   
-  // Portfolio filter
+  // Init Isotope
   var portfolioIsotope = $('.portfolio-container').isotope({
       itemSelector: '.portfolio-item',
       layoutMode: 'fitRows'
   });
 
+  // Filtre des catégories
   $('#portfolio-filter li').on('click', function () {
       $("#portfolio-filter li").removeClass('filter-active');
       $(this).addClass('filter-active');
-      portfolioIsotope.isotope({filter: $(this).data('filter')});
+      portfolioIsotope.isotope({ filter: $(this).data('filter') });
   });
-  
+
+  // Fix superposition : recalculer après images ET après animations WOW
+  $('.portfolio-container').imagesLoaded(function() {
+      portfolioIsotope.isotope('layout');
+  });
+
+  // Relancer le layout à chaque élément révélé par WOW.js
+  var wow = new WOW({
+      callback: function(box) {
+          portfolioIsotope.isotope('layout');
+      }
+  });
+  wow.init();
+    
 })(jQuery);
 
 function openLink(lien) {
